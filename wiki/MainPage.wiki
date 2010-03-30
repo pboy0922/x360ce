@@ -1,0 +1,32 @@
+"Xbox 360 Controller Emulator" allows your controller (GamePad, Joystick, Wheel, ...) to function like "Xbox 360 Controller". For example it allows you to play Grand Theft Auto (GTA) game with Logitech wheel.
+
+= Introduction =
+
+"Xbox 360 Controller Emulator" files:
+
+xinput1_3.dll (Library) - Wrapper library that translates the XInput calls to DirectInput calls, for support old, no XInput compatible GamePads.
+
+x360ce.exe - (Application) - Allows edit and test Library settings.
+
+x360ce.ini - (Configuration) - Contain Library settings (button, axis, slider maps). 
+
+= Details =
+
+*Installation*
+
+Run this program from game executable directory. Game executable can look for xinput dll by different names, you can create copy of dll with name provided below till you find one that works:
+
+xinput1_3.dll
+xinput1_2.dll
+xinput1_1.dll
+xinput9_1_0.dll
+
+*Uninstallation*
+
+Delete x360ce.exe, x360ce.ini, xbox360cemu.ini (if used) and dinput8.dll (if used) from game executable directory.
+
+= Notes =
+
+*GTA 4 and Force Feedback*
+
+Force feedback works only up to "GTA IV 1.0.3.0" and with "TocaEdit XInput 3.0 Vista" version: http://www.tocaedit.com/IB/index.php?automodule=downloads&req=download&id=30
