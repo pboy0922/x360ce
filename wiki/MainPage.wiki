@@ -1,6 +1,11 @@
 #labels Phase-Deploy
 "Xbox 360 Controller Emulator" allows your controller (GamePad, Joystick, Wheel, ...) to function like "Xbox 360 Controller". For example it allows you to play Grand Theft Auto (GTA) game with Logitech wheel.
 
+= System Requirements =
+
+Only Windows SP3 and newer systems are supported
+Installed 'Microsoft Visual C++ 2010 Redistributable Package (x86)'
+
 = Introduction =
 
 "Xbox 360 Controller Emulator" files:
