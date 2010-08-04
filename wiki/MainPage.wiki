@@ -4,6 +4,7 @@
 = System Requirements =
 
 Only Windows SP3 and newer systems are supported
+
 Installed 'Microsoft Visual C++ 2010 Redistributable Package (x86)'
 
 = Introduction =
