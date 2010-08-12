@@ -12,7 +12,7 @@
   * Just Cause 2
   * Prince of Persia: The Forgotten Sands
   * Resident Evil 5
-  * Tomb Raider - Underworld
+  * Tomb Raider - Underworld (uses xinput9_1_0.dll)
   * Transformers - War for Cybertron
 
 == Compatibility Mode ==
