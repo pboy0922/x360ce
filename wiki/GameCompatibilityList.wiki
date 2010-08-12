@@ -1,0 +1,21 @@
+#summary Game Compatibility List
+#labels Featured
+
+= Game Compatibility List =
+
+== Normal Mode ==
+
+  * Prototype
+  * Alpha Protocol
+  * Batman Arkham Asylum
+  * Blur
+  * Just Cause 2
+  * Prince of Persia: The Forgotten Sands
+  * Resident Evil 5
+  * Tomb Raider - Underworld
+  * Transformers - War for Cybertron
+
+== Compatibility Mode ==
+
+  * Assassin's Creed
+  * Prince of Persia (2008)
