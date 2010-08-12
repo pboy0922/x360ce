@@ -15,6 +15,7 @@
   * Tomb Raider - Underworld (uses xinput9_1_0.dll)
   * Transformers - War for Cybertron
   * Fallout 3
+  * Sonic & SEGA All-Stars Racing
 
 == Compatibility Mode ==
 
