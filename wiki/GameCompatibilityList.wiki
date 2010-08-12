@@ -16,6 +16,7 @@
   * Transformers - War for Cybertron
   * Fallout 3
   * Sonic & SEGA All-Stars Racing
+  * Trine
 
 == Compatibility Mode ==
 
