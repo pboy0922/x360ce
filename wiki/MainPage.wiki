@@ -1,4 +1,4 @@
-#labels Phase-Deploy
+#labels Phase-Deploy,Featured
 "Xbox 360 Controller Emulator" allows your controller (GamePad, Joystick, Wheel, ...) to function like "Xbox 360 Controller". For example it allows you to play Grand Theft Auto (GTA) game with Logitech wheel.
 
 = System Requirements =
