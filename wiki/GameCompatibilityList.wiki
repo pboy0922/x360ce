@@ -15,13 +15,14 @@
   * Tomb Raider - Underworld (uses xinput9_1_0.dll)
   * Transformers - War for Cybertron
   * Fallout 3
-  * Sonic & SEGA All-Stars Racing (game not show xbox buttons)
+  * Sonic & SEGA All-Stars Racing (game doesn't display xbox buttons)
   * Trine
   * Devil May Cry 4
   * X-Men Origins - Wolverine
   * Far Cry 2
   * Bioshock
   * Tomb Raider - Anniversary (uses xinput9_1_0.dll)
+  * Bionic Commando
 
 == Compatibility Mode ==
 
