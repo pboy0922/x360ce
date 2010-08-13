@@ -17,6 +17,7 @@
   * Fallout 3
   * Sonic & SEGA All-Stars Racing
   * Trine
+  * Devil May Cry 4
 
 == Compatibility Mode ==
 
