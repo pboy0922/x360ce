@@ -21,6 +21,7 @@
   * X-Men Origins - Wolverine
   * Far Cry 2
   * Bioshock
+  * Tomb Raider - Anniversary (uses xinput9_1_0.dll)
 
 == Compatibility Mode ==
 
