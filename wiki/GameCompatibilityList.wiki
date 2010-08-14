@@ -5,29 +5,31 @@
 
 == Normal Mode ==
 
-  * Prototype
   * Alpha Protocol
+  * Assassin's Creed II
   * Batman Arkham Asylum
+  * Bionic Commando
+  * Bioshock
   * Blur
+  * Devil May Cry 4
+  * Fallout 3
+  * Far Cry 2
   * Just Cause 2
   * Prince of Persia: The Forgotten Sands
+  * Prototype
+  * Race Driver GRID (read notes)
   * Resident Evil 5
+  * Sonic & SEGA All-Stars Racing
+  * Spider-Man - Web of Shadows
+  * Street Fighter IV
+  * The Last Remnant
+  * Tomb Raider - Anniversary (uses xinput9_1_0.dll)
+  * Tomb Raider - Legend (uses xinput9_1_0.dll)
   * Tomb Raider - Underworld (uses xinput9_1_0.dll)
   * Transformers - War for Cybertron
-  * Fallout 3
-  * Sonic & SEGA All-Stars Racing
   * Trine
-  * Devil May Cry 4
-  * X-Men Origins - Wolverine
-  * Far Cry 2
-  * Bioshock
-  * Tomb Raider - Anniversary (uses xinput9_1_0.dll)
-  * Bionic Commando
-  * The Last Remnant
-  * Street Fighter IV
-  * Spider-Man - Web of Shadows
-  * Race Driver GRID (read notes)
   * Virtua Tennis 2009
+  * X-Men Origins - Wolverine
 
 == Compatibility Mode ==
 
