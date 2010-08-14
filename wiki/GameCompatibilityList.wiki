@@ -25,6 +25,7 @@
   * Bionic Commando
   * The Last Remnant
   * Street Fighter IV
+  * Spider-Man - Web of Shadows
 
 == Compatibility Mode ==
 
