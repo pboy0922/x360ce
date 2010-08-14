@@ -1,7 +1,7 @@
 #summary Game Compatibility List
 #labels Featured
 
-= Game Compatibility List =
+= Compatible Games =
 
 == Normal Mode ==
 
@@ -41,3 +41,7 @@
 ==== Notes: ====
   * Most SEGA games do not display XBOX360 Controller buttons.
   * Race Driver GRID works fine in game, but game will freeze on exit.
+
+= Not Compatible Games =
+  * Marvel - Ultimate Alliance
+  * Tom Clancy's H.A.W.X
