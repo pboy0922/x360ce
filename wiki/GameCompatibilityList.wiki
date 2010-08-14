@@ -24,6 +24,7 @@
   * Tomb Raider - Anniversary (uses xinput9_1_0.dll)
   * Bionic Commando
   * The Last Remnant
+  * Street Fighter IV
 
 == Compatibility Mode ==
 
