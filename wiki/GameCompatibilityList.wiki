@@ -7,14 +7,19 @@
 
   * Alpha Protocol
   * Assassin's Creed II
+  * Avatar: The Game
   * Batman Arkham Asylum
   * Bionic Commando
   * Bioshock
   * Blur
+  * Call Of Juarez Bound In Blood
+  * Crysis
+  * Crysis Warhead
   * Devil May Cry 4
   * Fallout 3
   * Far Cry 2
   * Grand Theft Auto IV
+  * Incredible Hulk
   * Just Cause 2
   * Need for Speed: Undercover
   * Prince of Persia: The Forgotten Sands
@@ -30,6 +35,7 @@
   * Tomb Raider - Underworld (uses xinput9_1_0.dll)
   * Transformers - War for Cybertron
   * Trine
+  * Velvet Assassin
   * Virtua Tennis 2009
   * X-Men Origins - Wolverine
 
