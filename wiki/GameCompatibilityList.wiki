@@ -25,7 +25,7 @@
   * Need for Speed: Undercover
   * Prince of Persia (2008)
   * Prince of Persia: The Forgotten Sands
-  * Pro Evolution Soccer 2010
+  * Pro Evolution Soccer 2010 (uses xinput1_1.dll)
   * Prototype
   * Race Driver GRID (read notes)
   * Resident Evil 5
