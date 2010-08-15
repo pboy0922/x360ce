@@ -23,6 +23,7 @@
   * Just Cause 2
   * Lost Planet Colonies
   * Need for Speed: Undercover
+  * Prince of Persia (2008)
   * Prince of Persia: The Forgotten Sands
   * Prototype
   * Race Driver GRID (read notes)
@@ -44,7 +45,6 @@
 == Compatibility Mode ==
 
   * Assassin's Creed
-  * Prince of Persia (2008)
   * Splinter Cell Conviction
 
 ==== Notes: ====
