@@ -32,7 +32,6 @@
   * Spider-Man - Web of Shadows
   * Street Fighter IV
   * The Last Remnant
-  * Tom Clancy's H.A.W.X (versions 1.00 and 1.01 only, Lib r233 or newer needed)
   * Tomb Raider - Anniversary (uses xinput9_1_0.dll)
   * Tomb Raider - Legend (uses xinput9_1_0.dll)
   * Tomb Raider - Underworld (uses xinput9_1_0.dll)
@@ -46,6 +45,7 @@
 
   * Assassin's Creed
   * Splinter Cell Conviction
+  * Tom Clancy's H.A.W.X (versions 1.00 and 1.01 only, Lib r233 or newer needed)
 
 ==== Notes: ====
   * Most SEGA games do not display XBOX360 Controller buttons.
