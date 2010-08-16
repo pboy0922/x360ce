@@ -37,7 +37,6 @@
   * Tomb Raider - Legend (uses xinput9_1_0.dll)
   * Tomb Raider - Underworld (uses xinput9_1_0.dll)
   * Transformers - War for Cybertron
-  * Trine
   * Velvet Assassin
   * Virtua Tennis 2009
   * X-Men Origins - Wolverine
