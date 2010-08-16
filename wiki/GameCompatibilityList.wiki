@@ -54,3 +54,4 @@
 
 = Not Compatible Games =
   * Marvel - Ultimate Alliance
+  * FIFA 10
