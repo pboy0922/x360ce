@@ -46,7 +46,7 @@
 
   * Assassin's Creed
   * Splinter Cell Conviction
-  * Tom Clancy's H.A.W.X (versions 1.00 and 1.01 only, Lib r233 or newer needed)
+  * Tom Clancy's H.A.W.X
 
 ==== Notes: ====
   * Most SEGA games do not display XBOX360 Controller buttons.
@@ -54,4 +54,3 @@
 
 = Not Compatible Games =
   * Marvel - Ultimate Alliance
-  * Tom Clancy's H.A.W.X (version 1.02)
