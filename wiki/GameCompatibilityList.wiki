@@ -6,7 +6,6 @@
 == Normal Mode ==
 
   * Alpha Protocol
-  * Assassin's Creed II
   * Avatar: The Game
   * Batman Arkham Asylum
   * Bionic Commando
@@ -44,6 +43,7 @@
 == Compatibility Mode ==
 
   * Assassin's Creed
+  * Assassin's Creed II
   * Splinter Cell Conviction
   * Tom Clancy's H.A.W.X
 
