@@ -39,3 +39,7 @@ Delete x360ce.exe, x360ce.ini and all xinput dll from game executable directory.
 Please download and install Visual Studio 2010 Redist (x86) from: http://www.microsoft.com/downloads/details.aspx?FamilyID=a7b7a05e-6de6-4d3a-a423-37bf0912db84&displaylang=en
 
 Note you MUST install x86, even for x64 systems.
+
+== Screenshots ==
+
+[http://www.jocys.com/projects/x360ce/Images/x360ce_General.png]
