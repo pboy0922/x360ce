@@ -40,6 +40,6 @@ Please download and install Visual Studio 2010 Redist (x86) from: http://www.mic
 
 Note you MUST install x86, even for x64 systems.
 
-== Screenshots ==
+= Screenshots =
 
 [http://www.jocys.com/projects/x360ce/Images/x360ce_General.png]
