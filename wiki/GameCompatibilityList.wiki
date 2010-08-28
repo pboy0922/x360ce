@@ -1,6 +1,11 @@
 #summary Game Compatibility List
 #labels Featured
 
+=== Mode Info ===
+  Modes correspond to FakeMODE option in ini file
+  # Normal Mode - makes gamepad XInput compatible
+  # Compatibility Mode - change gamepad intro XBOX 360 Controller
+
 = Compatible Games =
 
 == Normal Mode ==
