@@ -36,10 +36,19 @@ Delete x360ce.exe, x360ce.ini and all xinput dll from game executable directory.
 
 *Error message about missing MSVCR100.dll*
 
-Please download and install "Microsoft Visual C++ 2010 Redistributable Package (x86)":
-http://www.microsoft.com/downloads/details.aspx?FamilyID=a7b7a05e-6de6-4d3a-a423-37bf0912db84
+    Please download and install "Microsoft Visual C++ 2010 Redistributable Package (x86)":
+    http://www.microsoft.com/downloads/details.aspx?FamilyID=a7b7a05e-6de6-4d3a-a423-37bf0912db84
 
-Note: You MUST install x86, even for x64 systems!
+    Note: You MUST install x86, even for x64 systems!
+
+*How to remove dead zone from wheel (GTA, Mafia II, ...)?*
+
+    1) Run x360ce.exe
+    2) Select tab with your Wheel Controller.
+    3) Open [Advanced] tab page
+    4) Select "Enabled (XInput)" from "AntiDeadZone" drop down
+    5) Clik [Save] button.
+    6) Close x360ce Application, run Mafia II game.
 
 = Screenshots =
 
