@@ -44,12 +44,12 @@ Delete x360ce.exe, x360ce.ini and all xinput dll from game executable directory.
 
 *How to remove dead zone from wheel (GTA, Mafia II, ...)?*
 
-    1) Run x360ce.exe
-    2) Select tab with your Wheel Controller.
-    3) Open [Advanced] tab page
-    4) Select "Enabled (XInput)" from "AntiDeadZone" drop down
-    5) Clik [Save] button.
-    6) Close x360ce Application, run Mafia II game.
+    # Run x360ce.exe
+    # Select tab with your Wheel Controller.
+    # Open [Advanced] tab page
+    # Select "Enabled (XInput)" from "AntiDeadZone" drop down
+    # Clik [Save] button.
+    # Close x360ce Application, run Mafia II game.
 
 = Screenshots =
 
