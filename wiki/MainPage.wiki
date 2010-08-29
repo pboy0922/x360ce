@@ -3,18 +3,16 @@
 
 = System Requirements =
 
-Only Windows SP3 and newer systems are supported
+Only Windows XP SP3 and newer systems are supported
 
-Installed 'Microsoft Visual C++ 2010 Redistributable Package (x86)'
+[http://www.microsoft.com/downloads/details.aspx?FamilyID=a7b7a05e-6de6-4d3a-a423-37bf0912db84 Microsoft Visual C++ 2010 Redistributable Package (x86)]
 
 = Introduction =
 
 "Xbox 360 Controller Emulator" files:
 
 xinput1_3.dll (Library) - Wrapper library that translates the XInput calls to DirectInput calls, for support old, no XInput compatible GamePads.
-
 x360ce.exe - (Application) - Allows edit and test Library settings.
-
 x360ce.ini - (Configuration) - Contain Library settings (button, axis, slider maps). 
 
 = Details =
