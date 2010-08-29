@@ -36,7 +36,8 @@ Delete x360ce.exe, x360ce.ini and all xinput dll from game executable directory.
 
 *Error message about missing MSVCR100.dll*
 
-Please download and install Visual Studio 2010 Redist (x86) from: http://www.microsoft.com/downloads/details.aspx?FamilyID=a7b7a05e-6de6-4d3a-a423-37bf0912db84&displaylang=en
+Please download and install Microsoft Visual "C++ 2010 Redistributable Package (x86)":
+http://www.microsoft.com/downloads/details.aspx?FamilyID=a7b7a05e-6de6-4d3a-a423-37bf0912db84
 
 Note you MUST install x86, even for x64 systems.
 
