@@ -66,7 +66,7 @@ Some games work only when controller is disguised as GamePad even if its Wheel. 
 
 *Do I need to run x360ce Application during the game?*
 
-No, you don't. Close x360ce Application during the game, because game doesn't need it and Application will consume PC resources. x360ce Application is used only as x360ce.ini file editor and controller tester.
+No, you don't. Close x360ce Application during the game, because game doesn't need it and Application will consume PC resources. x360ce Application is used only as GUI to edit x360ce.ini file and as controller tester.
 
 = Screenshots =
 
