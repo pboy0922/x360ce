@@ -25,6 +25,7 @@
   * Grand Theft Auto IV
   * Incredible Hulk
   * Just Cause 2
+  * Lara Croft and the Guardian of Light (uses xinput9_1_0.dll)
   * Lost Planet Colonies
   * Mafia 2
   * Need for Speed: Undercover
