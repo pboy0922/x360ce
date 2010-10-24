@@ -54,11 +54,13 @@
   * Splinter Cell Conviction
   * Tom Clancy's H.A.W.X
 
-==== Notes: ====
+=== Notes: ===
   * If not specified, game uses xinput1_3.dll
   * Most SEGA games do not display XBOX360 Controller buttons.
   * Race Driver GRID works fine in game, but game will freeze on exit.
 
 = Not Compatible Games =
+  * Blazing Angels 2  Secret Missions of WWII
   * Marvel - Ultimate Alliance
   * FIFA 10
+
