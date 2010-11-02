@@ -22,9 +22,11 @@
   * Devil May Cry 4
   * Fallout 3
   * Far Cry 2
+  * FIFA 11
   * Grand Theft Auto IV
   * Incredible Hulk
   * Just Cause 2
+  * Kane & Lynch 2 : Dog Days
   * Lara Croft and the Guardian of Light (uses xinput9_1_0.dll)
   * Lost Planet Colonies
   * Mafia 2
@@ -63,4 +65,3 @@
   * Blazing Angels 2  Secret Missions of WWII
   * Marvel - Ultimate Alliance
   * FIFA 10
-
