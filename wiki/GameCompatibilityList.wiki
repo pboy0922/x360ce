@@ -63,5 +63,6 @@
 
 = Not Compatible Games =
   * Blazing Angels 2  Secret Missions of WWII
-  * Marvel - Ultimate Alliance
   * FIFA 10
+  * Spider-Man(TM) - Shattered Dimensions
+  * Marvel - Ultimate Alliance
