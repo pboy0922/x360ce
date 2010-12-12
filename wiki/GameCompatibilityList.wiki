@@ -41,6 +41,7 @@
   * Sonic & SEGA All-Stars Racing
   * Spider-Man - Web of Shadows
   * Street Fighter IV
+  * Super Meat Boy (uses xinput9_1_0.dll)
   * The Last Remnant
   * Tomb Raider - Anniversary (uses xinput9_1_0.dll)
   * Tomb Raider - Legend (uses xinput9_1_0.dll)
