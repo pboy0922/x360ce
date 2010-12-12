@@ -23,10 +23,10 @@ x360ce.ini - (Configuration) - Contain Library settings (button, axis, slider ma
 
 Run this program from game executable directory. Game executable can look for xinput dll by different names, you can create copy of dll with name provided below till you find one that works:
 
-xinput1_3.dll
-xinput1_2.dll
-xinput1_1.dll
-xinput9_1_0.dll
+  * xinput1_3.dll
+  * xinput1_2.dll
+  * xinput1_1.dll
+  * xinput9_1_0.dll
 
 == Uninstallation ==
 
@@ -41,6 +41,8 @@ Delete x360ce.exe, x360ce.ini and all xinput dll from game executable directory.
     http://www.microsoft.com/downloads/details.aspx?FamilyID=a7b7a05e-6de6-4d3a-a423-37bf0912db84
 
     Note: You MUST install x86, even for x64 systems!
+
+    For x64 xinput DLL use this: http://www.microsoft.com/downloads/en/details.aspx?FamilyID=bd512d9e-43c8-4655-81bf-9350143d5867
 
 *Wheel doesn't work in the game, but it works inside x360ce Application.*
 
