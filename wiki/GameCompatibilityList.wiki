@@ -2,7 +2,8 @@
 #labels Featured
 
 === Mode Info ===
-  Modes correspond to FakeMODE option in ini file
+  Modes correspond to ini file HookMode option under InputHook section
+
   # Normal Mode - makes gamepad XInput compatible
   # Compatibility Mode - change gamepad intro XBOX 360 Controller
 
@@ -55,6 +56,7 @@
 
   * Assassin's Creed
   * Assassin's Creed II
+  * Kane and Lynch Dead Men
   * Splinter Cell Conviction
   * Tom Clancy's H.A.W.X
 
@@ -66,5 +68,6 @@
 = Not Compatible Games =
   * Blazing Angels 2  Secret Missions of WWII
   * FIFA 10
+  * Front Mission Evolved
   * Spider-Man(TM) - Shattered Dimensions
   * Marvel - Ultimate Alliance
