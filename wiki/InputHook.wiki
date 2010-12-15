@@ -1,4 +1,4 @@
-#InputHook HookMode
+#summary InputHook HookMode
 
 *Before r366 this was called FakeAPI, and before r348 it uses Microsoft Research Detours.*
 
