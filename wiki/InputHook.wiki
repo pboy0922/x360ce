@@ -1,4 +1,5 @@
-#summary InputHook guide
+#summary InputHook manual
+#labels Featured,Phase-Support
 
 *Before r366 this was called FakeAPI, and before r348 it uses Microsoft Research Detours.*
 
