@@ -1,4 +1,6 @@
+#summary What is x360ce and how use it
 #labels Phase-Deploy,Featured
+
 "Xbox 360 Controller Emulator" allows your controller (GamePad, Joystick, Wheel, ...) to function like "Xbox 360 Controller" so game will allow to use it. For example it allows you to play games like "Grand Theft Auto" (GTA) or "Mafia II" with Logitech Wheel. 
 
 = System Requirements =
