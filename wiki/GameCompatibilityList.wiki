@@ -11,63 +11,63 @@
 
 == Normal Mode ==
 
-  * Alpha Protocol
-  * Avatar: The Game
-  * Batman Arkham Asylum
-  * Bionic Commando
-  * Bioshock
-  * Blur
-  * Call Of Juarez Bound In Blood
-  * Crysis
-  * Crysis Warhead
-  * Devil May Cry 4
-  * Fallout 3
-  * Far Cry 2
-  * FIFA 11
-  * Grand Theft Auto IV
-  * Incredible Hulk
-  * Just Cause 2
-  * Kane & Lynch 2 : Dog Days
-  * Lara Croft and the Guardian of Light (uses xinput9_1_0.dll)
-  * Lost Planet Colonies
-  * Mafia 2
-  * Need for Speed: Undercover
-  * Prince of Persia (2008)
-  * Prince of Persia: The Forgotten Sands
-  * Pro Evolution Soccer 2010 (uses xinput1_1.dll)
-  * Prototype
-  * Race Driver GRID (read notes)
-  * Resident Evil 5
-  * Shank
-  * Sonic & SEGA All-Stars Racing
-  * Spider-Man - Web of Shadows
-  * Street Fighter IV
-  * Super Meat Boy (uses xinput9_1_0.dll)
-  * The Last Remnant
-  * Tomb Raider - Anniversary (uses xinput9_1_0.dll)
-  * Tomb Raider - Legend (uses xinput9_1_0.dll)
-  * Tomb Raider - Underworld (uses xinput9_1_0.dll)
-  * Transformers - War for Cybertron
-  * Velvet Assassin
-  * Virtua Tennis 2009
-  * X-Men Origins - Wolverine
+  # Alpha Protocol
+  # Avatar: The Game
+  # Batman Arkham Asylum
+  # Bionic Commando
+  # Bioshock
+  # Blur
+  # Call Of Juarez Bound In Blood
+  # Crysis
+  # Crysis Warhead
+  # Devil May Cry 4
+  # Fallout 3
+  # Far Cry 2
+  # FIFA 11
+  # Grand Theft Auto IV
+  # Incredible Hulk
+  # Just Cause 2
+  # Kane & Lynch 2 : Dog Days
+  # Lara Croft and the Guardian of Light (uses xinput9_1_0.dll)
+  # Lost Planet Colonies
+  # Mafia 2
+  # Need for Speed: Undercover
+  # Prince of Persia (2008)
+  # Prince of Persia: The Forgotten Sands
+  # Pro Evolution Soccer 2010 (uses xinput1_1.dll)
+  # Prototype
+  # Race Driver GRID (read notes)
+  # Resident Evil 5
+  # Shank
+  # Sonic & SEGA All-Stars Racing
+  # Spider-Man - Web of Shadows
+  # Street Fighter IV
+  # Super Meat Boy (uses xinput9_1_0.dll)
+  # The Last Remnant
+  # Tomb Raider - Anniversary (uses xinput9_1_0.dll)
+  # Tomb Raider - Legend (uses xinput9_1_0.dll)
+  # Tomb Raider - Underworld (uses xinput9_1_0.dll)
+  # Transformers - War for Cybertron
+  # Velvet Assassin
+  # Virtua Tennis 2009
+  # X-Men Origins - Wolverine
 
 == Compatibility Mode ==
 
-  * Assassin's Creed
-  * Assassin's Creed II
-  * Kane and Lynch Dead Men
-  * Splinter Cell Conviction
-  * Tom Clancy's H.A.W.X
+  # Assassin's Creed
+  # Assassin's Creed II
+  # Kane and Lynch Dead Men
+  # Splinter Cell Conviction
+  # Tom Clancy's H.A.W.X
 
 === Notes: ===
-  * If not specified, game uses xinput1_3.dll
-  * Most SEGA games do not display XBOX360 Controller buttons.
-  * Race Driver GRID works fine in game, but game will freeze on exit.
+  # If not specified, game uses xinput1_3.dll
+  # Most SEGA games do not display XBOX360 Controller buttons.
+  # Race Driver GRID works fine in game, but game will freeze on exit.
 
 = Not Compatible Games =
-  * Blazing Angels 2  Secret Missions of WWII
-  * FIFA 10
-  * Front Mission Evolved
-  * Spider-Man(TM) - Shattered Dimensions
-  * Marvel - Ultimate Alliance
+  # Blazing Angels 2  Secret Missions of WWII
+  # FIFA 10
+  # Front Mission Evolved
+  # Spider-Man(TM) - Shattered Dimensions
+  # Marvel - Ultimate Alliance
