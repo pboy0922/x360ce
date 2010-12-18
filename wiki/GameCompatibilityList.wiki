@@ -20,7 +20,9 @@
   # Call Of Juarez Bound In Blood
   # Crysis
   # Crysis Warhead
+  # Darksiders
   # Devil May Cry 4
+  # F1 2010
   # Fallout 3
   # Far Cry 2
   # FIFA 11
@@ -28,8 +30,11 @@
   # Incredible Hulk
   # Just Cause 2
   # Kane & Lynch 2 : Dog Days
+  # Kung Fu Panda
   # Lara Croft and the Guardian of Light (uses xinput9_1_0.dll)
+  # Last Remnant, The
   # Lost Planet Colonies
+  # Lost Planet 2
   # Mafia 2
   # Need for Speed: Undercover
   # Prince of Persia (2008)
@@ -38,18 +43,21 @@
   # Prototype
   # Race Driver GRID (read notes)
   # Resident Evil 5
+  # Saboteur, The
+  # Saints Row 2
   # Shank
   # Sonic & SEGA All-Stars Racing
   # Spider-Man - Web of Shadows
+  # Star Wars: The Force Unleashed 
   # Street Fighter IV
   # Super Meat Boy (uses xinput9_1_0.dll)
-  # The Last Remnant
   # Tomb Raider - Anniversary (uses xinput9_1_0.dll)
   # Tomb Raider - Legend (uses xinput9_1_0.dll)
   # Tomb Raider - Underworld (uses xinput9_1_0.dll)
   # Transformers - War for Cybertron
   # Velvet Assassin
   # Virtua Tennis 2009
+  # X-Blades
   # X-Men Origins - Wolverine
 
 == Compatibility Mode ==
