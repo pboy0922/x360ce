@@ -36,8 +36,7 @@ Delete x360ce.exe, x360ce.ini and all xinput dll from game executable directory.
 
 = Troubleshooting =
 
-*Application has failed to start because MSVCR100.dll was not found.*
-*x360ce config app is grayed out.*
+*Application has failed to start because MSVCR100.dll was not found or x360ce config app is grayed out.*
 
     This is because Microsoft Visual C++ 2010 Redistributable Package is missing.
     Please download and install "Microsoft Visual C++ 2010 Redistributable Package (x86)":
