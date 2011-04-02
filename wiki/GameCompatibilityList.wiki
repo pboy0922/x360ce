@@ -21,6 +21,7 @@
   # Crysis
   # Crysis Warhead
   # Darksiders
+  # Dead Space
   # Devil May Cry 4
   # F1 2010
   # Fallout 3
@@ -28,6 +29,7 @@
   # FIFA 11
   # Grand Theft Auto IV
   # Incredible Hulk
+  # James Bond 007 Blood Stone
   # Just Cause 2
   # Kane & Lynch 2 : Dog Days
   # Kung Fu Panda
@@ -37,15 +39,19 @@
   # Lost Planet 2
   # Mafia 2
   # Need for Speed: Undercover
+  # Ninja Blade
   # Prince of Persia (2008)
   # Prince of Persia: The Forgotten Sands
   # Pro Evolution Soccer 2010 (uses xinput1_1.dll)
   # Prototype
+  # Puzzle Quest 2
   # Race Driver GRID (read notes)
   # Resident Evil 5
   # Saboteur, The
   # Saints Row 2
-  # Shank
+  # Serious Sam HD - The Second Encounter
+  # Shank (disable InputHook)
+  # Silent Hill Homecoming
   # Sonic & SEGA All-Stars Racing
   # Spider-Man - Web of Shadows
   # Star Wars: The Force Unleashed 
@@ -64,16 +70,18 @@
 
   # Assassin's Creed
   # Assassin's Creed II
+  # Assassin's Creed: Brotherhood
+  # Burnout Paradise
   # Kane and Lynch Dead Men
+  # Magicka
   # Splinter Cell Conviction
   # Tom Clancy's H.A.W.X
 
 === Notes: ===
   # If not specified, game uses xinput1_3.dll
   # Most SEGA games do not display XBOX360 Controller buttons.
-  # Race Driver GRID works fine in game, but game will freeze on exit.
 
-= Not Compatible Games =
+= Games know to not working =
   # Blazing Angels 2  Secret Missions of WWII
   # FIFA 10
   # Front Mission Evolved
