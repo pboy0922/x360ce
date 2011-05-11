@@ -61,6 +61,7 @@
   # Tomb Raider - Legend (uses xinput9_1_0.dll)
   # Tomb Raider - Underworld (uses xinput9_1_0.dll)
   # Transformers - War for Cybertron
+  # Two Worlds II
   # Velvet Assassin
   # Virtua Tennis 2009
   # X-Blades
@@ -72,6 +73,7 @@
   # Assassin's Creed II
   # Assassin's Creed: Brotherhood
   # Burnout Paradise
+  # Dead Space 2
   # Kane and Lynch Dead Men
   # Magicka
   # Splinter Cell Conviction
