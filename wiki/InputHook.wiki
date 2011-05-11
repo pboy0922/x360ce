@@ -1,11 +1,9 @@
 #summary InputHook manual
 #labels Featured,Phase-Support
 
-*Before r366 this was called FakeAPI, and before r348 it uses Microsoft Research Detours.*
-
 = InputHook =
 
-InputHook is a [http://easyhook.codeplex.com EasyHook] based hook system for replacing  gamepad data returned form system to application with fake data - allow games to work with x360ce.
+InputHook is a hook system for replacing gamepad data returned form system to application with fake data - allow games to work with x360ce.
 
 = HookMode =
 HookMode option selects between Normal, Compatibility and Disabled states of InputHook.
