@@ -6,8 +6,9 @@
 InputHook is a hook system for replacing gamepad data returned form system to application with fake data - allow games to work with x360ce.
 
 = HookMode =
-HookMode option selects between Normal, Compatibility and Disabled states of InputHook.
+HookMode option selects between Normal, Compatibility, Full and Disabled states of InputHook.
 
 For most games Normal mode is recommended, it replace only some data to make gamepad "looks like" is XInput compatible.
 
-Compatibility mode replace additional data, is needed for games that filter DirectInput devices from XInput devices. Also change name of gamepad to "XBOX 360 Controller (for Windows)".
+Compatibility mode replace additional data, is needed for games that filter DirectInput devices from XInput devices. 
+Full mode also change name of gamepad to "XBOX 360 Controller (for Windows)".
