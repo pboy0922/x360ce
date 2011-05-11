@@ -81,7 +81,7 @@
   # If not specified, game uses xinput1_3.dll
   # Most SEGA games do not display XBOX360 Controller buttons.
 
-= Games know to not working =
+= Known games that do not work =
   # Blazing Angels 2  Secret Missions of WWII
   # FIFA 10
   # Front Mission Evolved
