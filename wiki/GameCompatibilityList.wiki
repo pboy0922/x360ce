@@ -5,7 +5,8 @@
   Modes correspond to ini file HookMode option under InputHook section
 
   # Normal Mode - makes gamepad XInput compatible
-  # Compatibility Mode - change gamepad intro XBOX 360 Controller
+  # Compatibility Mode - also change gamepad PID/VID and GUIDs
+  # Full Mode - also change gamepad name to "XBOX 360 Controller"
 
 = Compatible Games =
 
