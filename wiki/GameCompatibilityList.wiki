@@ -70,6 +70,7 @@
 
 == Compatibility Mode ==
 
+  # Alice Madness Returns
   # Assassin's Creed
   # Assassin's Creed II
   # Assassin's Creed: Brotherhood
