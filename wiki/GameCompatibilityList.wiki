@@ -79,6 +79,7 @@
   # Kane and Lynch Dead Men
   # Magicka
   # Splinter Cell Conviction
+  # Split/Second
   # Tom Clancy's H.A.W.X
 
 === Notes: ===
