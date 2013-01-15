@@ -1,0 +1,3 @@
+dllmain: ini -> parse -> get mimimal data needed to initalize InputHook -> addhooks and execute NOTE: store ini object data for reuse !
+xinit:	 enum -> create object for all gamepads (store object in vector<>) -> filter objects using productids -> store additional config data to controller object ->
+		 free not used objects
