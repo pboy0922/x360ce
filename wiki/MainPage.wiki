@@ -1,7 +1,7 @@
 #summary What is x360ce and how use it
 #labels Phase-Deploy,Featured
 
-"Xbox 360 Controller Emulator" allows your controller (GamePad, Joystick, Wheel, ...) to function like "Xbox 360 Controller" so game will allow to use it. For example it allows you to play games like "Grand Theft Auto" (GTA) or "Mafia II" with Logitech Wheel. 
+"Xbox 360 Controller Emulator" allows your controller (gamepad, joystick, wheel, ...), function as "Xbox 360 Controller". For example, lets you play games such as "Grand Theft Auto" (GTA) or "Mafia II" using Logitech Wheel.
 
 = System Requirements =
 
@@ -26,7 +26,8 @@ x360ce.ini - (Configuration) - Contain Library settings (button, axis, slider ma
 
 ==  Installation ==
 
-Run this program from game executable directory. Game executable can look for xinput dll by different names, you can create copy of dll with name provided below till you find one that works:
+Run this program from the directory the game executable. Xinput file occurs in several versions and some games require a change in its name.
+Know names:
 
   * xinput1_3.dll
   * xinput1_2.dll
@@ -41,7 +42,7 @@ Delete x360ce.exe, x360ce.ini and all xinput dll from game executable directory.
 
 *Wheel doesn't work in the game, but it works inside x360ce Application.*
 
-Some games work only when controller is disguised as GamePad even if its Wheel. Try to:
+Some games will only operate when the controller is considered to be the gamepad, even if it is the steering wheel. Try to:
 
     # Run x360ce.exe
     # Select tab with your Wheel Controller.
@@ -59,11 +60,11 @@ Some games work only when controller is disguised as GamePad even if its Wheel. 
     # Click [[Save]] button.
     # Close x360ce Application, run game.
 
-    Note: Some games have control issues when dead zone is reduced by 100%.
+    Note: Some games have control issues when the dead zone is reduced by 100%.
 
 *Do I need to run x360ce Application during the game?*
 
-No, you don't. Close x360ce Application during the game, because game doesn't need it and Application will consume PC resources. x360ce Application is used only as GUI to edit x360ce.ini file and as controller tester.
+No, You do not need. Close x360ce during the game, because the game does not need it, and the application uses computer resources. The application is just a GUI for editing the x360ce.ini and test controller.
 
 = Screenshots =
 
