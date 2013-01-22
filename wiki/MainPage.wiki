@@ -5,7 +5,8 @@
 
 = System Requirements =
 
-Only Windows XP SP3 and newer systems are supported
+Only Windows XP SP3 and newer systems are supported.
+
 System must have updated DirectX runtime using this installer:
 http://www.microsoft.com/en-us/download/details.aspx?id=35
 NOTE: Even on Windows 8. Without it x360ce.App will crash!
