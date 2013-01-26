@@ -18,6 +18,7 @@
   # Bionic Commando
   # Bioshock
   # Blur
+  # Borderlands 2
   # Call Of Juarez Bound In Blood
   # Crysis
   # Crysis Warhead
@@ -74,6 +75,7 @@
   # Assassin's Creed
   # Assassin's Creed II
   # Assassin's Creed: Brotherhood
+  # Blade Kitten
   # Burnout Paradise
   # Dead Space 2
   # Kane and Lynch Dead Men
