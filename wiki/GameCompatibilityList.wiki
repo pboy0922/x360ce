@@ -31,7 +31,7 @@
   # Far Cry 2
   # FIFA 11
   # Grand Theft Auto IV
-  # I Am Alive
+  # I Am Alive (uses xinput9_1_0.dll)
   # Incredible Hulk
   # James Bond 007 Blood Stone
   # Just Cause 2
