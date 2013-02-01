@@ -15,6 +15,7 @@
   # Alpha Protocol
   # Avatar: The Game
   # Batman Arkham Asylum
+  # Batman Arkham City (uses xinput9_1_0.dll)
   # Bionic Commando
   # Bioshock
   # Blur
@@ -27,6 +28,7 @@
   # Deus Ex Human Revolution (uses xinput9_1_0.dll)
   # Devil May Cry 4
   # F1 2010
+  # Fable 3
   # Fallout 3
   # Far Cry 2
   # FIFA 11
@@ -83,6 +85,8 @@
   # Assassin's Creed
   # Assassin's Creed II
   # Assassin's Creed: Brotherhood
+  # Assassin's Creed: Revelations
+  # Assassin's Creed III
   # Blade Kitten
   # Burnout Paradise
   # Dead Space 2
