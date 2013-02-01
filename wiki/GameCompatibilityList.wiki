@@ -17,6 +17,7 @@
   # Batman Arkham Asylum
   # Bionic Commando
   # Bioshock
+  # Blade Kitten
   # Blur
   # Borderlands 2
   # Call Of Juarez Bound In Blood
@@ -37,9 +38,11 @@
   # Kung Fu Panda
   # Lara Croft and the Guardian of Light (uses xinput9_1_0.dll)
   # Last Remnant, The
+  # Limbo
   # Lost Planet Colonies
   # Lost Planet 2
   # Mafia 2
+  # Mark of the Ninja
   # Need for Speed: Hot Pursuit
   # Ninja Blade
   # Prince of Persia (2008)
@@ -49,15 +52,18 @@
   # Puzzle Quest 2
   # Race Driver GRID (read notes)
   # Resident Evil 5
+  # Rusty Hearts (uses xinput9_1_0.dll)
   # Saboteur, The
   # Saints Row 2
   # Serious Sam HD - The Second Encounter
   # Shank (disable InputHook)
   # Silent Hill Homecoming
+  # Sine-Mora
   # Sonic & SEGA All-Stars Racing
   # Spider-Man - Web of Shadows
   # Star Wars: The Force Unleashed 
   # Street Fighter IV
+  # Super Street Fighter IV: Arcade Edition (uses xinput9_1_0.dll)
   # Super Meat Boy (uses xinput9_1_0.dll)
   # Tomb Raider - Anniversary (uses xinput9_1_0.dll)
   # Tomb Raider - Legend (uses xinput9_1_0.dll)
@@ -65,6 +71,7 @@
   # Transformers - War for Cybertron
   # Two Worlds II
   # Velvet Assassin
+  # Vessel
   # Virtua Tennis 2009
   # X-Blades
   # X-Men Origins - Wolverine
@@ -89,6 +96,7 @@
   # Most SEGA games do not display XBOX360 Controller buttons.
 
 = Known games that do not work =
+  # Beat Hazard Ultimate
   # Blazing Angels 2  Secret Missions of WWII
   # FIFA 10
   # Front Mission Evolved
