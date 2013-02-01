@@ -1,5 +1,5 @@
 #summary Game Compatibility List
-#labels Featured
+#labels Featured,Restrict-AddWikiComment-Commit
 
 === Mode Info ===
   Modes correspond to ini file HookMode option under InputHook section
