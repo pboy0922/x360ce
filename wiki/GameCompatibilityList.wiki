@@ -31,6 +31,7 @@
   # Far Cry 2
   # FIFA 11
   # Grand Theft Auto IV
+  # I Am Alive
   # Incredible Hulk
   # James Bond 007 Blood Stone
   # Just Cause 2
