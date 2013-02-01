@@ -24,6 +24,7 @@
   # Crysis Warhead
   # Darksiders
   # Dead Space
+  # Deus Ex Human Revolution (uses xinput9_1_0.dll)
   # Devil May Cry 4
   # F1 2010
   # Fallout 3
