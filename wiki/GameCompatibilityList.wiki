@@ -107,3 +107,8 @@
   # Front Mission Evolved
   # Spider-Man(TM) - Shattered Dimensions
   # Marvel - Ultimate Alliance
+
+==Reporting Compatibility / Incompatibility==
+  You can report compatible games or games that have issues in 2 ways
+  #Through the Issue tracker - inclue 'Game Compatibility' in the Issue Title
+  #Via a thread in [http://forums.ngemu.com/forumdisplay.php?f=140 this board at EmuForums]
