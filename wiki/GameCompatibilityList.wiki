@@ -17,7 +17,6 @@
   # Batman Arkham Asylum
   # Bionic Commando
   # Bioshock
-  # Blade Kitten
   # Blur
   # Borderlands 2
   # Call Of Juarez Bound In Blood
