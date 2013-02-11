@@ -8,6 +8,7 @@
   * Windows XP SP3 and newer.
   * DirectX: http://www.microsoft.com/en-us/download/details.aspx?id=35
   * Visual C++ Redist: http://www.microsoft.com/en-us/download/details.aspx?id=30679
+  * .NET 4.0 (link to 4.5, also installs 4.0): http://www.microsoft.com/en-us/download/details.aspx?id=30653
 
 NOTE: You must install DirectX even for Windows 8.
 
