@@ -1,3 +1,5 @@
+#summary Reporting Game Compatibility
+
 For games NOT listed in the [http://forums.ngemu.com/showthread.php?t=154966 Game Compatibility List]
 
 As of r574, compatibility is very different, this guide will detail how to report which hookmasks work for which games, how to use the hookmasks and I will compile update the Compatibility page over time.
