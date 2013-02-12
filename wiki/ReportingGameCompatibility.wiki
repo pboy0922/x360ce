@@ -58,13 +58,14 @@ See the thread rules below for further information.
  * This enables the hooking of SetupAPI, only the BeatHazard titles are known to require it thus far, so it should almost never be needed.
 
 *HookWT*
- * This enables the hooking of WinVerifyTrust. This is required for games which utilise WVT for Process Integrity checking.
-Only Gears of War is known to use it at this point, so it should almost never be needed.
+ * This enables the hooking of WinVerifyTrust. This is required for games which utilise WVT for Process Integrity checking. Only Gears of War is known to use it at this point, so it should almost never be needed.
 
 *HOOK_DI and HOOK_PIDVID*
  * This allows the wrapper to trick some games that detect the controller GUID via DirectInput, The first Assassins Creed is one such title.
 
-Some games will work even without any of the above set, It would be good to know these as well.
+Many games will work even without any of the above set, It would be good to know these as well.
+
+When reporting game compatibility, the HookMask(s) used, full game title and executable name are required for adding to the GDB.
 
 =Thread Rules:=
  # [http://forums.ngemu.com/showthread.php?t=155113 This thread] is specifically for reporting games found to be compatible.
