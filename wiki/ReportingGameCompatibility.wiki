@@ -9,7 +9,7 @@ As of r574, compatibility is very different, this guide will detail how to repor
 Games that use Xinput only usually do not require a hooking mask, but others do, particularly those that use unusual methods for detecting Xbox360 pads or support both Xinput and DirectInput pads(these are usually requiring HookCOM).
 
 
-=X360CE.GDB=
+*X360CE.GDB*
 In the GDB file, the HookMasks (HookMask=) are written using a combination of these hex values
 
  * LoadLibrary(HookLL)    = 0x00000001;
@@ -30,7 +30,7 @@ There are also some other values that are really only useful to the developers s
  * HOOK_DISABLE = 0x80000000;
 
 
-=X360CE.INI=
+*X360CE.INI*
 In the INI, they are entered under the [InputHook] section as 
 
  * HookLL=(0/1)
