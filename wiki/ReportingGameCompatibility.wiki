@@ -10,6 +10,7 @@ Games that use Xinput only usually do not require a hooking mask, but others do,
 
 
 *X360CE.GDB*
+
 In the GDB file, the HookMasks (HookMask=) are written using a combination of these hex values
 
  * LoadLibrary(HookLL)    = 0x00000001;
@@ -31,6 +32,7 @@ There are also some other values that are really only useful to the developers s
 
 
 *X360CE.INI*
+
 In the INI, they are entered under the [InputHook] section as 
 
  * HookLL=(0/1)
@@ -60,7 +62,7 @@ See the thread rules below for further information.
 Only Gears of War is known to use it at this point, so it should almost never be needed.
 
 *HOOK_DI and HOOK_PIDVID*
-* This allows the wrapper to trick some games that detect the controller GUID via DirectInput, The first Assassins Creed is one such title.
+ * This allows the wrapper to trick some games that detect the controller GUID via DirectInput, The first Assassins Creed is one such title.
 
 Some games will work even without any of the above set, It would be good to know these as well.
 
