@@ -1,4 +1,4 @@
-#summary InputHook manual DEPRECATED AS OR r574
+#summary InputHook manual DEPRECATED AS OF r574
 #labels Featured,Phase-Support
 
 = DEPRECATED AS OF r574 - Use HookMasks instead!=
