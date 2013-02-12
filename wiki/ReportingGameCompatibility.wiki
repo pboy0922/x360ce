@@ -65,10 +65,10 @@ See the thread rules below for further information.
 
 Many games will work even without any of the above set, It would be good to know these as well.
 
-When reporting game compatibility, the HookMask(s) used, full game title and executable name are required for adding to the GDB.
 
-=Thread Rules:=
+=Rules:=
  # [http://forums.ngemu.com/showthread.php?t=155113 This thread] is specifically for reporting games found to be compatible.
+ # When reporting game compatibility, the HookMask(s) used, full game title and executable name are required for adding to the GDB.
  # If you find a game crashing that is listed in the compatibility list, its likely not the wrapper, but an issue with your controllers drivers - particularly if it uses an obscure (probably bad) Force Feedback driver. Start your [B]own [/B]thread or report the issue to the issue tracker.
  # If a game is not working with any settings, start a thread of your own or report it to the issue tracker.
  # Do not post in the thread about a game already listed unless you have evidence that settings provided by the original reporter are wrong.
