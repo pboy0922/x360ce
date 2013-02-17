@@ -1,21 +1,14 @@
 #summary Game Compatibility List
 #labels Featured,Restrict-AddWikiComment-Commit
 
-=== Mode Info ===
-  Modes correspond to ini file HookMode option under InputHook section
+=HookMode= 
 
-  # Normal Mode - makes gamepad XInput compatible
-  # Compatibility Mode - also change gamepad PID/VID and GUIDs
-  # Full Mode - also change gamepad name to "XBOX 360 Controller"
+(Items in these lists are pending testing for the new hookmask system)
 
-= Compatible Games =
-
-== Normal Mode ==
+== Normal Mode == 
 
   # Alpha Protocol
   # Avatar: The Game
-  # Batman Arkham Asylum
-  # Batman Arkham City (uses xinput9_1_0.dll)
   # Bionic Commando
   # Bioshock
   # Blur
@@ -32,7 +25,9 @@
   # Fallout 3
   # Far Cry 2
   # FIFA 11
-  # Grand Theft Auto IV
+  # Ghostbusters
+  # Guilty Gear Isuka
+  # Guilty Gear X2 #Reload
   # I Am Alive (uses xinput9_1_0.dll)
   # Incredible Hulk
   # James Bond 007 Blood Stone
@@ -41,13 +36,14 @@
   # Kung Fu Panda
   # Lara Croft and the Guardian of Light (uses xinput9_1_0.dll)
   # Last Remnant, The
-  # Limbo
   # Lost Planet Colonies
   # Lost Planet 2
   # Mafia 2
-  # Mark of the Ninja
+  # Mirror's Edge
+  # Need for Speed: Carbon
   # Need for Speed: Hot Pursuit
   # Ninja Blade
+  # OnLive
   # Prince of Persia (2008)
   # Prince of Persia: The Forgotten Sands
   # Pro Evolution Soccer 2010 (uses xinput1_1.dll)
@@ -55,18 +51,16 @@
   # Puzzle Quest 2
   # Race Driver GRID (read notes)
   # Resident Evil 5
+  # Resident Evil: Operation Raccoon City
   # Rusty Hearts (uses xinput9_1_0.dll)
   # Saboteur, The
-  # Saints Row 2
   # Serious Sam HD - The Second Encounter
-  # Shank (disable InputHook)
   # Silent Hill Homecoming
   # Sine-Mora
+  # Sleeping Dogs
   # Sonic & SEGA All-Stars Racing
   # Spider-Man - Web of Shadows
-  # Star Wars: The Force Unleashed 
-  # Street Fighter IV
-  # Super Street Fighter IV: Arcade Edition (uses xinput9_1_0.dll)
+  # Star Wars: The Force Unleashed
   # Super Meat Boy (uses xinput9_1_0.dll)
   # Tomb Raider - Anniversary (uses xinput9_1_0.dll)
   # Tomb Raider - Legend (uses xinput9_1_0.dll)
@@ -74,7 +68,6 @@
   # Transformers - War for Cybertron
   # Two Worlds II
   # Velvet Assassin
-  # Vessel
   # Virtua Tennis 2009
   # X-Blades
   # X-Men Origins - Wolverine
@@ -82,31 +75,74 @@
 == Compatibility Mode ==
 
   # Alice Madness Returns
-  # Assassin's Creed
-  # Assassin's Creed II
-  # Assassin's Creed: Brotherhood
-  # Assassin's Creed: Revelations
-  # Assassin's Creed III
-  # Blade Kitten
   # Burnout Paradise
   # Dead Space 2
   # Kane and Lynch Dead Men
   # Magicka
   # Splinter Cell Conviction
   # Split/Second
-  # Tom Clancy's H.A.W.X
 
-=== Notes: ===
-  # If not specified, game uses xinput1_3.dll
-  # Most SEGA games do not display XBOX360 Controller buttons.
-
-= Known games that do not work =
-  # Beat Hazard Ultimate
+== Known games that do not work ==
   # Blazing Angels 2  Secret Missions of WWII
   # FIFA 10
   # Front Mission Evolved
   # Spider-Man(TM) - Shattered Dimensions
   # Marvel - Ultimate Alliance
+
+=HookMasks=
+This is the new system utilised by r574+
+
+==Hookmask Not Required==
+  # Bastion
+  # Batman Arkham Asylum
+  # Batman Arkham City (uses xinput9_1_0.dll)
+  # Grand Theft Auto IV
+  # Limbo
+  # Mark of the Ninja
+
+==Hookmask Required==
+
+===HookLL===
+
+===HookCOM===
+
+  # Assassin's Creed II
+  # Assassin's Creed: Brotherhood
+  # Assassin's Creed: Revelations
+  # Assassin's Creed III
+  # Blade Kitten
+  # Dark Souls: Prepare to Die Edition
+  # Dead Island
+  # DeathSpank
+  # DeathSpank - Thongs of Virtue
+  # DmC - Devil May Cry
+  # Saints Row 2
+  # Shank 2
+  # Street Fighter IV (If someone could tell us what EXE is required for this game???!!!)
+  # Super Street Fighter IV: Arcade Edition (uses xinput9_1_0.dll)
+  # Street Fighter x Tekken
+  # Vessel
+  # XCOM Enemy Unknown
+
+===HookSA===
+
+  # Beat Hazard Classic/Ultimate
+
+===HookWT===
+
+  # Gears of War
+
+===Multiple HookMasks===
+
+  # Assassin's Creed (HookCOM + Hook_DI + HookVIDPID)
+  # Baconing, The (HookLL + HookCOM)
+  # Tom Clancy's H.A.W.X (HookCOM + Hook_DI + HookVIDPID)
+  # Tom Clancy's H.A.W.X 2 (HookCOM + Hook_DI + HookVIDPID)
+
+=== Notes: ===
+  # If not specified, game uses xinput1_3.dll
+  # Most SEGA games do not display XBOX360 Controller buttons.
+  # Blade Kitten does not display XBOX360 Controller buttons.
 
 ==Reporting Compatibility / Incompatibility==
   You can report compatible games or games that have issues in 2 ways
