@@ -19,7 +19,7 @@ x360ce.exe - (Application) - Allows edit and test Library settings.
 
 x360ce.ini - (Configuration) - Contain Library settings (button, axis, slider maps). 
 
-x360ce.gdb - (Game Database with required hookmasks for various games)
+x360ce.gdb - (Game Database) Includes required hookmasks for various games)
 
 Dinput8.dll - (DirectInput 8 spoof/wrapping file to improve x360ce compatibility in rare cases)
 
@@ -35,6 +35,8 @@ Know names:
   * xinput1_2.dll
   * xinput1_1.dll
   * xinput9_1_0.dll
+
+Game Database (GDB) and Configuration (Ini) files can be copied to %Allusersprofile%\X360CE on NT6 (Vista/7/8) or %Allusersprofile%\Application Data\X360CE on NT5.1 (XP), Or left in the same directory as the game executable (.EXE)
 
 == Uninstallation ==
 
