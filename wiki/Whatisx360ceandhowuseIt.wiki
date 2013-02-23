@@ -19,6 +19,10 @@ x360ce.exe - (Application) - Allows edit and test Library settings.
 
 x360ce.ini - (Configuration) - Contain Library settings (button, axis, slider maps). 
 
+x360ce.gdb - (Game Database with required hookmasks for various games)
+
+Dinput8.dll - (DirectInput 8 spoof/wrapping file to improve x360ce compatibility in rare cases)
+
 = Details =
 
 ==  Installation ==
@@ -26,6 +30,7 @@ x360ce.ini - (Configuration) - Contain Library settings (button, axis, slider ma
 Run this program from the directory the game executable. Xinput file occurs in several versions and some games require a change in its name.
 Know names:
 
+  * xinput1_4.dll (Windows 8 / metro apps only)
   * xinput1_3.dll
   * xinput1_2.dll
   * xinput1_1.dll
