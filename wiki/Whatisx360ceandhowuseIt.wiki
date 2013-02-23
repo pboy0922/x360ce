@@ -69,10 +69,12 @@ Some games will only operate when the controller is considered to be the gamepad
 No, You do not need. Close x360ce during the game, because the game does not need it, and the application uses computer resources. The application is just a GUI for editing the x360ce.ini and test controller.
 
 *Warning - Configuration file version does not match x360ce version.*
+
 This occurs because the current version of the application is not completely compatible with the DLL just yet.
 You can resolve this by adding Version=1 under the [Options] section in x360ce.ini
 
 *Controller tab won't turn green / Red light on Controller 1,2 etc.*
+
 This can occur for a number of reasons.
 
     # The DInput state of the control might be incorrect due to previous application crashing and not unloading the control or some other reason. Opening up Joy.cpl (Set Up Usb Game Controllers) and clicking the Advanced button, and then Okaying out of the window that appears can fix it.
