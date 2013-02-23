@@ -1,4 +1,5 @@
 #summary What is x360ce and how use it
+#labels Restrict-AddWikiComment-Commit
 
 "Xbox 360 Controller Emulator" allows your controller (gamepad, joystick, wheel, ...), function as "Xbox 360 Controller". For example, lets you play games such as "Grand Theft Auto" (GTA) or "Mafia II" using Logitech Wheel.
 
