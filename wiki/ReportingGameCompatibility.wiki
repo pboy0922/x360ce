@@ -48,6 +48,8 @@ Whilst you can just enable all 4 and forget it, it is advised to only use one of
 Don't hesitate to report if you find any games that crash with all them set, it would be good if it could eventually default to all on and be done with it.
 See the thread rules below for further information.
 
+=What HookMasks Do=
+
 *HookCOM*
  * Games that support both Direct and X Input API's may end up displaying both controllers in game, resulting in ghosted input or being able to start a 2 player game using a single control (SF4/SSF4 and DMC for example). [http://msdn.microsoft.com/en-us/library/windows/desktop/ee417014(v=vs.85).aspx HookCOM allows the game to mask the controller's directinput capabilities, which is advised by microsoft themselves on TechNet]. HookCOM is the method required in most cases of games not working.
 
