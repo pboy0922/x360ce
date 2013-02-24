@@ -24,7 +24,6 @@
   # Fable 3
   # Fallout 3
   # Far Cry 2
-  # FIFA 11
   # Ghostbusters
   # Guilty Gear Isuka
   # Guilty Gear X2 #Reload
@@ -117,6 +116,11 @@ This is the new system utilised by r574+
   # DeathSpank
   # DeathSpank - Thongs of Virtue
   # DmC - Devil May Cry
+  # FIFA 10
+  # FIFA 11
+  # FIFA 12
+  # FIFA 13
+  # FlatOut Ultimate Carnage
   # Saints Row 2
   # Shank 2
   # Street Fighter IV (If someone could tell us what EXE is required for this game???!!!)
