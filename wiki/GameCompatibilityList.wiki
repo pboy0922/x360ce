@@ -55,7 +55,6 @@
   # Saboteur, The
   # Serious Sam HD - The Second Encounter
   # Silent Hill Homecoming
-  # Sine-Mora
   # Sleeping Dogs
   # Sonic & SEGA All-Stars Racing
   # Spider-Man - Web of Shadows
@@ -98,6 +97,7 @@ This is the new system utilised by r574+
   # Grand Theft Auto IV
   # Limbo
   # Mark of the Ninja
+  # Sine-Mora
 
 ==Hookmask Required==
 
@@ -123,7 +123,7 @@ This is the new system utilised by r574+
   # FlatOut Ultimate Carnage
   # Saints Row 2
   # Shank 2
-  # Street Fighter IV (If someone could tell us what EXE is required for this game???!!!)
+  # Street Fighter IV
   # Super Street Fighter IV: Arcade Edition (uses xinput9_1_0.dll)
   # Street Fighter x Tekken
   # Vessel
@@ -148,6 +148,7 @@ This is the new system utilised by r574+
   # If not specified, game uses xinput1_3.dll
   # Most SEGA games do not display XBOX360 Controller buttons.
   # Blade Kitten does not display XBOX360 Controller buttons.
+  # Saints Row 2 does not display XBOX360 Controller buttons.
 
 ==Reporting Compatibility / Incompatibility==
   You can report compatible games or games that have issues in 2 ways
