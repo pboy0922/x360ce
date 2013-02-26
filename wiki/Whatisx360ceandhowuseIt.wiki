@@ -6,9 +6,14 @@
 = System Requirements =
 
   * Windows XP SP3 and newer.
+  * [http://www.microsoft.com/en-us/download/details.aspx?id=21 .NET 3.5 (Also installs 2.0 and 3.5)]
+  * [http://www.microsoft.com/en-us/download/details.aspx?id=30653 .NET 4.0 (link to 4.5, also installs 4.0)] (Included with Windows 8)
   * [http://www.microsoft.com/en-us/download/details.aspx?id=35 DirectX End-User Runtimes (June 2010)] (Required regardless of OS)
   * [http://www.microsoft.com/en-us/download/details.aspx?id=30679 Visual C++ Redistributable for Visual Studio 2012 Update 1] (Most titles use the x86 runtime whether your OS is 64bit or not)
-  * [http://www.microsoft.com/en-us/download/details.aspx?id=30653 .NET 4.0 (link to 4.5, also installs 4.0)]
+
+Notes: 
+  * Windows 7 includes .net 3.5 and its updates to .net 2.0 and 3.0
+  * Windows XP and Vista can obtain it from the above link, and Windows 8 users can enable it in [http://msdn.microsoft.com/en-us/library/hh506443.aspx Programs and Features - Turn Windows Features on and off.]
 
 = Introduction =
 
