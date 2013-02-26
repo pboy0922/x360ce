@@ -14,7 +14,8 @@
 Notes: 
   * Windows 7 includes .net 3.5 and its updates to .net 2.0 and 3.0
   * For Windows XP and Vista, users can obtain it from the above link, and Windows 8 users can enable it in [http://msdn.microsoft.com/en-us/library/hh506443.aspx Programs and Features - Turn Windows Features on and off.]
-  * It should be installed prior to the DirectX webupdate / Redist as it checks that .Net 2.0/3.0/3.5 is installed and skips the Managed DirectX framework if it is not.
+  * It should be installed prior to the DirectX webupdate as it checks that .Net 2.0/3.0/3.5 is installed and skips the Managed DirectX framework if it is not.
+  * The full DirectX Redistributable will always install the file, however its best to have .net 3.5 installed anyhow as quite a few Xinput titles utilise .net for internal dependencies.
 
 = Introduction =
 
