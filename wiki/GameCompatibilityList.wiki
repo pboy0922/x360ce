@@ -55,7 +55,6 @@
   # Saboteur, The
   # Serious Sam HD - The Second Encounter
   # Silent Hill Homecoming
-  # Sleeping Dogs
   # Sonic & SEGA All-Stars Racing
   # Spider-Man - Web of Shadows
   # Star Wars: The Force Unleashed
@@ -123,6 +122,7 @@ This is the new system utilised by r574+
   # FlatOut Ultimate Carnage
   # Saints Row 2
   # Shank 2
+  # Sleeping Dogs
   # Street Fighter IV
   # Super Street Fighter IV: Arcade Edition (uses xinput9_1_0.dll)
   # Street Fighter x Tekken
