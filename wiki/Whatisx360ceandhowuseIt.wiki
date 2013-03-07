@@ -32,8 +32,9 @@ Dinput8.dll - (DirectInput 8 spoof/wrapping file to improve x360ce compatibility
 
 ==  Installation ==
 
-Run this program from the directory the game executable. Xinput file occurs in several versions and some games require a change in its name.
-Know names:
+Run this program from the same directory as the game executable. Xinput library files exist with several different names and some games require a change in its name.
+
+Known names:
 
   * xinput1_4.dll (Windows 8 / metro apps only)
   * xinput1_3.dll
@@ -42,6 +43,9 @@ Know names:
   * xinput9_1_0.dll
 
 Game Database (GDB) and Configuration (Ini) files can be copied to %Allusersprofile%\X360CE on NT6 (Vista/7/8) or %Allusersprofile%\Application Data\X360CE on NT5.1 (XP), Or left in the same directory as the game executable (.EXE)
+
+Note:
+Games based on source engine in most cases have the dll placed inside the /Bin/ subfolder, as it it is loaded by inputsystem.dll instead of the game executable.
 
 == Uninstallation ==
 
