@@ -45,7 +45,8 @@ Known names:
 Game Database (GDB) and Configuration (Ini) files can be copied to %Allusersprofile%\X360CE on NT6 (Vista/7/8) or %Allusersprofile%\Application Data\X360CE on NT5.1 (XP), Or left in the same directory as the game executable (.EXE)
 
 Note:
-Games based on source engine in most cases have the dll placed inside the /Bin/ subfolder, as it it is loaded by inputsystem.dll instead of the game executable.
+  * Games based on source engine in most cases have the dll placed inside the /Bin/ subfolder, as it it is loaded by inputsystem.dll instead of the game executable.
+  * The DLL is not currently fully supported by the App, recent versions incorporate HookMasks and fully remove HookModes, and requires placing Version=1 under [options] in the x360ce.ini to quieten a incorrect version warning
 
 == Uninstallation ==
 
