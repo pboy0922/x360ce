@@ -81,6 +81,7 @@
 
 == Known games that do not work ==
   # Blazing Angels 2  Secret Missions of WWII
+  # Brutal Legend
   # FIFA 10
   # Front Mission Evolved
   # Spider-Man(TM) - Shattered Dimensions
