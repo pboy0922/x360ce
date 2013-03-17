@@ -1,4 +1,5 @@
 #summary Reporting Game Compatibility
+#labels Restrict-AddWikiComment-Commit
 
 For games NOT listed in the [http://forums.ngemu.com/showthread.php?t=154966 Game Compatibility List]
 
