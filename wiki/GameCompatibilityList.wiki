@@ -99,7 +99,9 @@ This is the new system utilised by r574+
   # Limbo
   # Mark of the Ninja
   # Sine-Mora
+  # They Bleed Pixels
   # Tomb Raider(2013) (uses xinput9_1_0.dll)
+  # WarFrame (Game has the option to use 32 or 64bit executables, so select the correct version of x360ce accordingly)
 
 ==Hookmask Required==
 
@@ -144,6 +146,7 @@ This is the new system utilised by r574+
 
   # Assassin's Creed (HookCOM + Hook_DI + HookVIDPID)
   # Baconing, The (HookLL + HookCOM)
+  # Slam Bolt Scrappers (HookCOM + Hook_DI + HookVIDPID)
   # Tom Clancy's H.A.W.X (HookCOM + Hook_DI + HookVIDPID)
   # Tom Clancy's H.A.W.X 2 (HookCOM + Hook_DI + HookVIDPID)
 
