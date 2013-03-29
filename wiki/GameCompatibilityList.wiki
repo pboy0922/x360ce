@@ -114,6 +114,7 @@ This is the new system utilised by r574+
   # Assassin's Creed: Brotherhood
   # Assassin's Creed: Revelations
   # Assassin's Creed III
+  # BioShock Infinite
   # Blade Kitten
   # Dark Souls: Prepare to Die Edition
   # Dead Island
