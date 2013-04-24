@@ -99,6 +99,7 @@ This is the new system utilised by r574+
   # Grand Theft Auto IV
   # Limbo
   # Mark of the Ninja
+  # Sacred Citadel (uses xinput9_1_0.dll)
   # Sine-Mora
   # They Bleed Pixels
   # Tomb Raider(2013) (uses xinput9_1_0.dll)
