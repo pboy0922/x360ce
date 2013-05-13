@@ -131,6 +131,7 @@ This is the new system utilised by r574+
   # Saints Row 2
   # Shank 2
   # Sleeping Dogs
+  # Sonic & All-Stars Racing Transformed
   # Street Fighter IV
   # Super Street Fighter IV: Arcade Edition (uses xinput9_1_0.dll)
   # Street Fighter x Tekken
