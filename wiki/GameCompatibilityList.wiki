@@ -95,8 +95,10 @@ This is the new system utilised by r574+
   # Batman Arkham Asylum
   # Batman Arkham City (uses xinput9_1_0.dll)
   # Deadlight
+  # Dust: An Elysian Tail
   # Elder Scrolls V, The - Skyrim
   # Grand Theft Auto IV
+  # Lara Croft and the Guardian of Light(uses xinput9_1_0.dll)
   # Limbo
   # Mark of the Ninja
   # Sacred Citadel (uses xinput9_1_0.dll)
@@ -135,6 +137,8 @@ This is the new system utilised by r574+
   # Street Fighter IV
   # Super Street Fighter IV: Arcade Edition (uses xinput9_1_0.dll)
   # Street Fighter x Tekken
+  # Trine (If using Type 2 rumble, increase motor duration to 500)
+  # Trine 2 (If using Type 2 rumble, increase motor duration to 500)
   # Vessel
   # XCOM Enemy Unknown
 
