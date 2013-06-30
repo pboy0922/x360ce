@@ -90,6 +90,7 @@ You can resolve this by adding Version=1 under the [Options] section in x360ce.i
 
 This can occur for a number of reasons.
 
+    # The configuration utility DOES NOT work with the 64bit version of x360ce, it will only work with the 32bit version, This is the case regardless of whether your windows is 32bit or 64bit.
     # The DInput state of the control might be incorrect due to previous application crashing and not unloading the control or some other reason. Opening up Joy.cpl (Set Up Usb Game Controllers) and clicking the Advanced button, and then Okaying out of the window that appears can fix it.
     # The controller profile loaded may match the name of the control but not actually be for the controller you own - in this case you might see button numbers or axes mapped that do not appear in the joy.cpl test page.
     # There just might not be a profile for your control at all - The light should turn green once atleast the 2 sticks, triggers and Dpad are assigned. Sometimes the application needs to be restarted after assigning these for the light to turn green.
