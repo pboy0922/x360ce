@@ -38,7 +38,6 @@
   # Lost Planet Colonies
   # Lost Planet 2
   # Mafia 2
-  # Mirror's Edge
   # Need for Speed: Carbon
   # Need for Speed: Hot Pursuit
   # Ninja Blade
@@ -130,6 +129,7 @@ This is the new system utilised by r574+
   # FIFA 12
   # FIFA 13
   # FlatOut Ultimate Carnage
+  # Mirror's Edge
   # Saints Row 2
   # Shank 2
   # Sleeping Dogs
