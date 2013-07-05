@@ -12,7 +12,6 @@
   # Bionic Commando
   # Bioshock
   # Blur
-  # Borderlands 2
   # Call Of Juarez Bound In Blood
   # Crysis
   # Crysis Warhead
@@ -50,7 +49,6 @@
   # Race Driver GRID (read notes)
   # Resident Evil 5
   # Resident Evil: Operation Raccoon City
-  # Rusty Hearts (uses xinput9_1_0.dll)
   # Saboteur, The
   # Serious Sam HD - The Second Encounter
   # Silent Hill Homecoming
@@ -93,6 +91,7 @@ This is the new system utilised by r574+
   # Bastion
   # Batman Arkham Asylum
   # Batman Arkham City (uses xinput9_1_0.dll)
+  # Borderlands 2
   # Deadlight
   # Dust: An Elysian Tail
   # Elder Scrolls V, The - Skyrim
@@ -100,6 +99,7 @@ This is the new system utilised by r574+
   # Lara Croft and the Guardian of Light(uses xinput9_1_0.dll)
   # Limbo
   # Mark of the Ninja
+  # Rusty Hearts (uses xinput9_1_0.dll)
   # Sacred Citadel (uses xinput9_1_0.dll)
   # Sine-Mora
   # They Bleed Pixels
@@ -131,6 +131,7 @@ This is the new system utilised by r574+
   # FlatOut Ultimate Carnage
   # Mirror's Edge
   # Saints Row 2
+  # Saints Row: The Third
   # Shank 2
   # Sleeping Dogs
   # Sonic & All-Stars Racing Transformed
