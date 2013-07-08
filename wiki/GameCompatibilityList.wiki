@@ -28,7 +28,6 @@
   # I Am Alive (uses xinput9_1_0.dll)
   # Incredible Hulk
   # James Bond 007 Blood Stone
-  # Just Cause 2
   # Kane & Lynch 2 : Dog Days
   # Kung Fu Panda
   # Lara Croft and the Guardian of Light (uses xinput9_1_0.dll)
@@ -76,7 +75,6 @@
 == Known games that do not work ==
   # Blazing Angels 2  Secret Missions of WWII
   # Brutal Legend
-  # FIFA 10
   # Front Mission Evolved
   # Spider-Man(TM) - Shattered Dimensions
   # Marvel - Ultimate Alliance
@@ -97,6 +95,7 @@ This is the new system utilised by r574+
   # Grand Theft Auto IV
   # Hell Yeah!
   # Hitman: Absolution (uses xinput9_1_0.dll)
+  # Just Cause 2
   # Lara Croft and the Guardian of Light(uses xinput9_1_0.dll)
   # Limbo
   # Mark of the Ninja
