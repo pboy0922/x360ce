@@ -15,7 +15,6 @@
   # Call Of Juarez Bound In Blood
   # Crysis
   # Crysis Warhead
-  # Darksiders
   # Dead Space
   # Deus Ex Human Revolution (uses xinput9_1_0.dll)
   # Devil May Cry 4
@@ -55,7 +54,6 @@
   # Sonic & SEGA All-Stars Racing
   # Spider-Man - Web of Shadows
   # Star Wars: The Force Unleashed
-  # Super Meat Boy (uses xinput9_1_0.dll)
   # Tomb Raider - Anniversary (uses xinput9_1_0.dll)
   # Tomb Raider - Legend (uses xinput9_1_0.dll)
   # Tomb Raider - Underworld (uses xinput9_1_0.dll)
@@ -72,7 +70,6 @@
   # Burnout Paradise
   # Dead Space 2
   # Kane and Lynch Dead Men
-  # Magicka
   # Splinter Cell Conviction
   # Split/Second
 
@@ -88,14 +85,18 @@
 This is the new system utilised by r574+
 
 ==Hookmask Not Required==
+  # Awesomenauts
   # Bastion
   # Batman Arkham Asylum
   # Batman Arkham City (uses xinput9_1_0.dll)
   # Borderlands 2
+  # Call of Juarez: Gunslinger
   # Deadlight
   # Dust: An Elysian Tail
   # Elder Scrolls V, The - Skyrim
   # Grand Theft Auto IV
+  # Hell Yeah!
+  # Hitman: Absolution (uses xinput9_1_0.dll)
   # Lara Croft and the Guardian of Light(uses xinput9_1_0.dll)
   # Limbo
   # Mark of the Ninja
@@ -119,6 +120,8 @@ This is the new system utilised by r574+
   # Assassin's Creed III
   # BioShock Infinite
   # Blade Kitten
+  # Darksiders
+  # Darksiders 2
   # Dark Souls: Prepare to Die Edition
   # Dead Island
   # DeathSpank
@@ -129,6 +132,7 @@ This is the new system utilised by r574+
   # FIFA 12
   # FIFA 13
   # FlatOut Ultimate Carnage
+  # Magicka
   # Mirror's Edge
   # Saints Row 2
   # Saints Row: The Third
@@ -136,6 +140,7 @@ This is the new system utilised by r574+
   # Sleeping Dogs
   # Sonic & All-Stars Racing Transformed
   # Street Fighter IV
+  # Super Meat Boy (uses xinput9_1_0.dll)
   # Super Street Fighter IV: Arcade Edition (uses xinput9_1_0.dll)
   # Street Fighter x Tekken
   # Trine (If using Type 2 rumble, increase motor duration to 500)
