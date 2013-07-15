@@ -10,7 +10,7 @@
   * [http://www.microsoft.com/en-us/download/details.aspx?id=30653 .NET 4.0 (link to 4.5, also installs 4.0)] (Included with Windows 8)
     * .NET 4.5 is not supported on Windows XP SP3, download .NET 4.0 from [http://www.microsoft.com/en-us/download/details.aspx?id=17851 here].
   * [http://www.microsoft.com/en-us/download/details.aspx?id=35 DirectX End-User Runtimes (June 2010)] (Required regardless of OS)
-  * [http://www.microsoft.com/en-us/download/details.aspx?id=30679 Visual C++ Redistributable for Visual Studio 2012 Update 1] (Most titles use the x86 runtime whether your OS is 64bit or not)
+  * [http://www.microsoft.com/en-us/download/details.aspx?id=30679 Visual C++ Redistributable for Visual Studio 2012 Update 3] (Most titles use the x86 runtime whether your OS is 64bit or not)
 
 Notes: 
   * Windows 7 includes .net 3.5 and its updates to .net 2.0 and 3.0
