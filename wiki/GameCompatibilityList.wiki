@@ -89,6 +89,8 @@ This is the new system utilised by r574+
   # Batman Arkham City (uses xinput9_1_0.dll)
   # Borderlands 2
   # Call of Juarez: Gunslinger
+  # Capsized (If using Type 2 rumble, increase motor duration to 500)
+  # Castle Crashers
   # Deadlight
   # Dust: An Elysian Tail
   # Elder Scrolls V, The - Skyrim
