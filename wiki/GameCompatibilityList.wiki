@@ -92,6 +92,7 @@ This is the new system utilised by r574+
   # Capsized (If using Type 2 rumble, increase motor duration to 500)
   # Castle Crashers
   # Deadlight
+  # Dungeon Defenders
   # Dust: An Elysian Tail
   # Elder Scrolls V, The - Skyrim
   # Grand Theft Auto IV
