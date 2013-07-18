@@ -177,6 +177,12 @@ This is the new system utilised by r574+
   # Blade Kitten does not display XBOX360 Controller buttons.
   # Saints Row 2 does not display XBOX360 Controller buttons.
 
+=== Incompatible: ===
+
+  # Unity Engine titles. Most of these games only utilise xinput to trigger vibration events while all input detection is performed via RawInput. Unfortunately this poses issues as
+    # Controller calibration is ignored via RawInput.
+    # Unity Engine needs to profile every gamepad hardware and its driver for RawInput to actually work with them.
+
 ==Reporting Compatibility / Incompatibility==
   You can report compatible games or games that have issues in 2 ways
   # Through the Issue tracker - include 'Game Compatibility' in the Issue Title
