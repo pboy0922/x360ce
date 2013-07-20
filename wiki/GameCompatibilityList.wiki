@@ -101,7 +101,6 @@ This is the new system utilised by r574+
   # Just Cause 2
   # Lara Croft and the Guardian of Light(uses xinput9_1_0.dll)
   # Limbo
-  # Mark of the Ninja
   # Rusty Hearts (uses xinput9_1_0.dll)
   # Sacred Citadel (uses xinput9_1_0.dll)
   # Sine-Mora
@@ -135,6 +134,7 @@ This is the new system utilised by r574+
   # FIFA 13
   # FlatOut Ultimate Carnage
   # Magicka
+  # Mark of the Ninja
   # Mirror's Edge
   # Need For Speed Most Wanted 2012
   # Rayman Origins
