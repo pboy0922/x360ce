@@ -95,7 +95,7 @@ This is the new system utilised by r574+
   # Dungeon Defenders
   # Dust: An Elysian Tail
   # Elder Scrolls V, The - Skyrim
-  # Grand Theft Auto IV
+  # Grand Theft Auto IV (If using Type 2 rumble, increase motor duration to 500)
   # Hell Yeah!
   # Hitman: Absolution (uses xinput9_1_0.dll)
   # Just Cause 2
