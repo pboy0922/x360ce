@@ -91,7 +91,7 @@ This is the new system utilised by r574+
   # Call of Juarez: Gunslinger
   # Capsized (If using Type 2 rumble, increase motor duration to 500)
   # Castle Crashers
-  # Deadlight
+  # DuckTales Remastered
   # Dungeon Defenders
   # Dust: An Elysian Tail
   # Elder Scrolls V, The - Skyrim
@@ -125,6 +125,7 @@ This is the new system utilised by r574+
   # Darksiders 2
   # Dark Souls: Prepare to Die Edition
   # Dead Island
+  # Deadlight
   # DeathSpank
   # DeathSpank - Thongs of Virtue
   # DmC - Devil May Cry
