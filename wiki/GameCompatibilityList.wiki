@@ -95,6 +95,7 @@ This is the new system utilised by r574+
   # Dungeon Defenders
   # Dust: An Elysian Tail
   # Elder Scrolls V, The - Skyrim
+  # Fez
   # Grand Theft Auto IV (If using Type 2 rumble, increase motor duration to 500)
   # Hell Yeah!
   # Hitman: Absolution (uses xinput9_1_0.dll)
@@ -139,9 +140,11 @@ This is the new system utilised by r574+
   # Mirror's Edge
   # Need For Speed Most Wanted 2012
   # Rayman Origins
+  # Saints Row IV
   # Saints Row 2
   # Saints Row: The Third
   # Shank 2
+  # Skullgirls (uses xinput9_1_0.dll)
   # Sleeping Dogs
   # Sonic & All-Stars Racing Transformed
   # Sonic Generations
@@ -171,6 +174,7 @@ This is the new system utilised by r574+
   # Slam Bolt Scrappers (HookCOM + Hook_DI + HookVIDPID)
   # Tom Clancy's H.A.W.X (HookCOM + Hook_DI + HookVIDPID)
   # Tom Clancy's H.A.W.X 2 (HookCOM + Hook_DI + HookVIDPID)
+  # Tom Clancy's Splinter Cell Blacklist(HookCOM + Hook_DI + HookVIDPID)
 
 === Notes: ===
   # All games utilise the x86 version of the xinput1_3.dll unless otherwise specified.
