@@ -140,8 +140,8 @@ This is the new system utilised by r574+
   # Mirror's Edge
   # Need For Speed Most Wanted 2012
   # Rayman Origins
-  # Saints Row IV
   # Saints Row 2
+  # Saints Row IV
   # Saints Row: The Third
   # Shank 2
   # Skullgirls (uses xinput9_1_0.dll)
