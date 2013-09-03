@@ -1,6 +1,10 @@
 #summary Game Compatibility List
 #labels Featured,Restrict-AddWikiComment-Commit
 
+Notice: Games listed here do not necessarily reflect the games included in the GDB included in the lib download.
+
+To update the gdb, [https://x360ce.googlecode.com/svn/trunk/x360ce/Support/x360ce.gdb save this page over the top of your gdb]
+
 =HookMode= 
 
 (Items in these lists are pending testing for the new hookmask system)
