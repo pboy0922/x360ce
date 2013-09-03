@@ -135,6 +135,8 @@ This is the new system utilised by r574+
   # FIFA 12
   # FIFA 13
   # FlatOut Ultimate Carnage
+  # Grid
+  # Grid 2
   # Magicka
   # Mark of the Ninja
   # Mirror's Edge
