@@ -85,14 +85,11 @@ This is the new system utilised by r574+
 ==Hookmask Not Required==
   # Awesomenauts
   # Bastion
-  # Batman Arkham Asylum
-  # Batman Arkham City (uses xinput9_1_0.dll)
   # Borderlands 2
   # Call of Juarez: Gunslinger
   # Capsized (If using Type 2 rumble, increase motor duration to 500)
   # Castle Crashers
   # DuckTales Remastered
-  # Dungeon Defenders
   # Dust: An Elysian Tail
   # Elder Scrolls V, The - Skyrim
   # Fez
@@ -120,6 +117,8 @@ This is the new system utilised by r574+
   # Assassin's Creed: Brotherhood
   # Assassin's Creed: Revelations
   # Assassin's Creed III
+  # Batman Arkham Asylum
+  # Batman Arkham City (uses xinput9_1_0.dll)
   # BioShock Infinite
   # Blade Kitten
   # Darksiders
@@ -130,6 +129,7 @@ This is the new system utilised by r574+
   # DeathSpank
   # DeathSpank - Thongs of Virtue
   # DmC - Devil May Cry
+  # Dungeon Defenders
   # FIFA 10
   # FIFA 11
   # FIFA 12
