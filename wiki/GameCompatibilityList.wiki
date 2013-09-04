@@ -121,6 +121,7 @@ This is the new system utilised by r574+
   # Assassin's Creed: Brotherhood
   # Assassin's Creed: Revelations
   # Assassin's Creed III
+  # Battlefield 3 (uses xinput9_1_0.dll)
   # Batman Arkham Asylum
   # Batman Arkham City (uses xinput9_1_0.dll)
   # BioShock Infinite
