@@ -90,6 +90,7 @@ This is the new system utilised by r574+
   # Awesomenauts
   # Bastion
   # Borderlands 2
+  # Blades of Time (uses xinput9_1_0.dll)
   # Call of Juarez: Gunslinger
   # Capsized (If using Type 2 rumble, increase motor duration to 500)
   # Castle Crashers
@@ -97,13 +98,14 @@ This is the new system utilised by r574+
   # Dust: An Elysian Tail
   # Elder Scrolls V, The - Skyrim
   # Fez
+  # Godmode (uses xinput9_1_0.dll)
   # Grand Theft Auto IV (If using Type 2 rumble, increase motor duration to 500)
   # Hell Yeah!
   # Hitman: Absolution (uses xinput9_1_0.dll)
   # Just Cause 2
   # Lara Croft and the Guardian of Light(uses xinput9_1_0.dll)
   # Limbo
-  # Rusty Hearts (uses xinput9_1_0.dll)
+  # Rusty Hearts (uses xinput9_1_0.dll and xinput1_3.dll)
   # Sacred Citadel (uses xinput9_1_0.dll)
   # Sine-Mora
   # They Bleed Pixels
@@ -126,6 +128,7 @@ This is the new system utilised by r574+
   # Batman Arkham City (uses xinput9_1_0.dll)
   # BioShock Infinite
   # Blade Kitten
+  # Brothers: A Tale of Two Sons
   # Darksiders
   # Darksiders 2
   # Dark Souls: Prepare to Die Edition
@@ -150,6 +153,7 @@ This is the new system utilised by r574+
   # Saints Row 2
   # Saints Row IV
   # Saints Row: The Third
+  # Shank
   # Shank 2
   # Skullgirls (uses xinput9_1_0.dll)
   # Sleeping Dogs
@@ -157,7 +161,7 @@ This is the new system utilised by r574+
   # Sonic Generations
   # Street Fighter IV
   # Super Meat Boy (uses xinput9_1_0.dll)
-  # Super Street Fighter IV: Arcade Edition (uses xinput9_1_0.dll)
+  # Super Street Fighter IV: Arcade Edition (uses xinput9_1_0.dll and xinput1_3.dll)
   # Street Fighter x Tekken
   # Trine (If using Type 2 rumble, increase motor duration to 500)
   # Trine 2 (If using Type 2 rumble, increase motor duration to 500)
