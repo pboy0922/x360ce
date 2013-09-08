@@ -48,7 +48,6 @@ To update the gdb, [https://x360ce.googlecode.com/svn/trunk/x360ce/Support/x360c
   # Pro Evolution Soccer 2010 (uses xinput1_1.dll)
   # Prototype
   # Puzzle Quest 2
-  # Race Driver GRID (read notes)
   # Resident Evil 5
   # Resident Evil: Operation Raccoon City
   # Saboteur, The
