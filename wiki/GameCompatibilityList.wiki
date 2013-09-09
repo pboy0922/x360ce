@@ -148,6 +148,7 @@ This is the new system utilised by r574+
   # Mark of the Ninja
   # Mirror's Edge
   # Need For Speed Most Wanted 2012
+  # Outlast (Game has the option to use 32 or 64bit executables, so select the correct version of x360ce accordingly)
   # Rayman Origins
   # Saints Row 2
   # Saints Row IV
