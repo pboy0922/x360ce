@@ -128,6 +128,7 @@ This is the new system utilised by r574+
   # BioShock Infinite
   # Blade Kitten
   # Brothers: A Tale of Two Sons
+  # Bulletstorm
   # Darksiders
   # Darksiders 2
   # Dark Souls: Prepare to Die Edition
