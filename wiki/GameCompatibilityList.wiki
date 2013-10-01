@@ -93,6 +93,7 @@ This is the new system utilised by r574+
   # Call of Juarez: Gunslinger
   # Capsized (If using Type 2 rumble, increase motor duration to 500)
   # Castle Crashers
+  # Castlevania: Lords of Shadow – Ultimate Edition
   # DuckTales Remastered
   # Dust: An Elysian Tail
   # Elder Scrolls V, The - Skyrim
@@ -142,6 +143,7 @@ This is the new system utilised by r574+
   # FIFA 11
   # FIFA 12
   # FIFA 13
+  # FIFA 14
   # FlatOut Ultimate Carnage
   # Grid
   # Grid 2
@@ -180,13 +182,14 @@ This is the new system utilised by r574+
 
 ===Multiple HookMasks===
 
-  # Assassin's Creed (HookCOM + Hook_DI + HookVIDPID)
+  # Assassin's Creed (HookCOM + HookDI + HookVIDPID + HookName)
   # Baconing, The (HookLL + HookCOM)
-  # Final Fantasy XIV: A Realm Reborn(HookCOM + Hook_DI + HookVIDPID)
-  # Slam Bolt Scrappers (HookCOM + Hook_DI + HookVIDPID)
-  # Tom Clancy's H.A.W.X (HookCOM + Hook_DI + HookVIDPID)
-  # Tom Clancy's H.A.W.X 2 (HookCOM + Hook_DI + HookVIDPID)
-  # Tom Clancy's Splinter Cell Blacklist(HookCOM + Hook_DI + HookVIDPID)
+  # Burnout Paradise - The Ultimate Box (HookCOM + HookDI + HookVIDPID + HookName)
+  # Final Fantasy XIV: A Realm Reborn(HookCOM + HookDI + HookVIDPID)
+  # Slam Bolt Scrappers (HookCOM + HookDI + HookVIDPID)
+  # Tom Clancy's H.A.W.X (HookCOM + HookDI + HookVIDPID)
+  # Tom Clancy's H.A.W.X 2 (HookCOM + HookDI + HookVIDPID)
+  # Tom Clancy's Splinter Cell Blacklist(HookCOM + HookDI + HookVIDPID)
 
 === Notes: ===
   # All games utilise the x86 version of the xinput1_3.dll unless otherwise specified.
