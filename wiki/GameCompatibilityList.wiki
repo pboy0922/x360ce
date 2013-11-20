@@ -176,6 +176,7 @@ This is the new system utilised by r574+
   # Trine 2 (If using Type 2 rumble, increase motor duration to 500)
   # Vessel
   # Worms Revolution
+  # XCOM Enemy Within
   # XCOM Enemy Unknown
 
 ===HookSA===
@@ -192,6 +193,7 @@ This is the new system utilised by r574+
   # Baconing, The (HookLL + HookCOM)
   # Burnout Paradise - The Ultimate Box (HookCOM + HookDI + HookVIDPID + HookName)
   # Final Fantasy XIV: A Realm Reborn(HookCOM + HookDI + HookVIDPID)
+  # I Am Alive (HookCOM + HookDI + HookVIDPID)
   # Slam Bolt Scrappers (HookCOM + HookDI + HookVIDPID)
   # Tom Clancy's H.A.W.X (HookCOM + HookDI + HookVIDPID)
   # Tom Clancy's H.A.W.X 2 (HookCOM + HookDI + HookVIDPID)
