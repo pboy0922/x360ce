@@ -194,6 +194,7 @@ This is the new system utilised by r574+
   # Burnout Paradise - The Ultimate Box (HookCOM + HookDI + HookVIDPID + HookName)
   # Final Fantasy XIV: A Realm Reborn(HookCOM + HookDI + HookVIDPID)
   # I Am Alive (HookCOM + HookDI + HookVIDPID)
+  # Need for Speed: Rivals (HookCOM + HookDI + HookVIDPID) (uses xinput9_1_0.dll) (Game uses 32bit or 64bit executable depending on OS, so select the correct version of x360ce accordingly)
   # Slam Bolt Scrappers (HookCOM + HookDI + HookVIDPID)
   # Tom Clancy's H.A.W.X (HookCOM + HookDI + HookVIDPID)
   # Tom Clancy's H.A.W.X 2 (HookCOM + HookDI + HookVIDPID)
