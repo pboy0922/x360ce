@@ -29,7 +29,6 @@ To update the gdb, [https://x360ce.googlecode.com/svn/trunk/x360ce/Support/x360c
   # Ghostbusters
   # Guilty Gear Isuka
   # Guilty Gear X2 #Reload
-  # I Am Alive (uses xinput9_1_0.dll)
   # Incredible Hulk
   # James Bond 007 Blood Stone
   # Kane & Lynch 2 : Dog Days
@@ -193,7 +192,7 @@ This is the new system utilised by r574+
   # Baconing, The (HookLL + HookCOM)
   # Burnout Paradise - The Ultimate Box (HookCOM + HookDI + HookVIDPID + HookName)
   # Final Fantasy XIV: A Realm Reborn(HookCOM + HookDI + HookVIDPID)
-  # I Am Alive (HookCOM + HookDI + HookVIDPID)
+  # I Am Alive (HookCOM + HookDI + HookVIDPID) (uses xinput9_1_0.dll)
   # Need for Speed: Rivals (HookCOM + HookDI + HookVIDPID) (uses xinput9_1_0.dll) (Game uses 32bit or 64bit executable depending on OS, so select the correct version of x360ce accordingly)
   # Slam Bolt Scrappers (HookCOM + HookDI + HookVIDPID)
   # Tom Clancy's H.A.W.X (HookCOM + HookDI + HookVIDPID)
