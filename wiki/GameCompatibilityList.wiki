@@ -149,6 +149,7 @@ This is the new system utilised by r574+
   # FlatOut Ultimate Carnage
   # Grid
   # Grid 2
+  # Injustice: Gods Among Us Ultimate Edition
   # Magicka
   # Mark of the Ninja
   # Mirror's Edge
