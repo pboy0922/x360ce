@@ -109,7 +109,7 @@ This is the new system utilised by r574+
   # Sine-Mora
   # They Bleed Pixels
   # Tomb Raider(2013) (uses xinput9_1_0.dll)
-  # WarFrame (Game has the option to use 32 or 64bit executables, so select the correct version of x360ce accordingly)
+  # WarFrame (32bit and 64bit executables, defaults to 64bit on 64bit OS)
 
 ==Hookmask Required==
 
@@ -154,7 +154,7 @@ This is the new system utilised by r574+
   # Mirror's Edge
   # Need For Speed Most Wanted 2012
   # NBA 2k14
-  # Outlast (Game has the option to use 32 or 64bit executables, so select the correct version of x360ce accordingly)
+  # Outlast (32bit and 64bit executables, defaults to 64bit on 64bit OS)
   # Rayman Legends
   # Rayman Origins
   # Remember Me
@@ -193,7 +193,7 @@ This is the new system utilised by r574+
   # Burnout Paradise - The Ultimate Box (HookCOM + HookDI + HookVIDPID + HookName)
   # Final Fantasy XIV: A Realm Reborn(HookCOM + HookDI + HookVIDPID)
   # I Am Alive (HookCOM + HookDI + HookVIDPID) (uses xinput9_1_0.dll)
-  # Need for Speed: Rivals (HookCOM + HookDI + HookVIDPID) (uses xinput9_1_0.dll) (Game uses 32bit or 64bit executable depending on OS, so select the correct version of x360ce accordingly)
+  # Need for Speed: Rivals (HookCOM + HookDI + HookVIDPID) (uses xinput9_1_0.dll) (32bit and 64bit executables, always uses 64bit on 64bit OS)
   # Slam Bolt Scrappers (HookCOM + HookDI + HookVIDPID)
   # Tom Clancy's H.A.W.X (HookCOM + HookDI + HookVIDPID)
   # Tom Clancy's H.A.W.X 2 (HookCOM + HookDI + HookVIDPID)
