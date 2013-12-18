@@ -83,6 +83,7 @@ To update the gdb, [https://x360ce.googlecode.com/svn/trunk/x360ce/Support/x360c
 This is the new system utilised by r574+
 
 ==Hookmask Not Required==
+  # Alone in the dark (2008) (uses xinput1_1.dll)
   # Awesomenauts
   # Bastion
   # Borderlands 2
@@ -150,6 +151,8 @@ This is the new system utilised by r574+
   # Grid
   # Grid 2
   # Injustice: Gods Among Us Ultimate Edition
+  # LEGO Indiana Jones: The Original Adventures
+  # LEGO Pirates of the Caribbean: The Video Game
   # Magicka
   # Mark of the Ninja
   # Mirror's Edge
