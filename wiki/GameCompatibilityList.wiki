@@ -96,13 +96,16 @@ This is the new system utilised by r574+
   # Dust: An Elysian Tail
   # Elder Scrolls V, The - Skyrim
   # Fez
+  # Final Exam
   # Godmode (uses xinput9_1_0.dll)
   # Grand Theft Auto IV (If using Type 2 rumble, increase motor duration to 500)
+  # Guacamelee! Gold Edition (uses xinput9_1_0.dll)
   # Hell Yeah!
   # Hitman: Absolution (uses xinput9_1_0.dll)
   # Just Cause 2
   # Lara Croft and the Guardian of Light(uses xinput9_1_0.dll)
   # Limbo
+  # Monaco
   # Pro Evolution Soccer 2010 (uses xinput1_1.dll)
   # Pro Evolution Soccer 2014
   # Rusty Hearts (uses xinput9_1_0.dll and xinput1_3.dll)
@@ -175,6 +178,7 @@ This is the new system utilised by r574+
   # Super Meat Boy (uses xinput9_1_0.dll)
   # Super Street Fighter IV: Arcade Edition (uses xinput9_1_0.dll and xinput1_3.dll)
   # Street Fighter x Tekken
+  # Tiny Brains
   # Trine (If using Type 2 rumble, increase motor duration to 500)
   # Trine 2 (If using Type 2 rumble, increase motor duration to 500)
   # Vessel
