@@ -66,7 +66,6 @@ To update the gdb, [https://x360ce.googlecode.com/svn/trunk/x360ce/Support/x360c
 == Compatibility Mode ==
 
   # Alice Madness Returns
-  # Burnout Paradise
   # Dead Space 2
   # Kane and Lynch Dead Men
   # Splinter Cell Conviction
