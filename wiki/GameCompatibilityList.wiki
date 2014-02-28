@@ -110,7 +110,7 @@ This is the new system utilised by r574+
   # Rusty Hearts (uses xinput9_1_0.dll and xinput1_3.dll)
   # Sacred Citadel (uses xinput9_1_0.dll)
   # Sine-Mora
-  # Sudeki (Steam)
+  # Sudeki (Steam) (uses xinput1_2.dll)
   # They Bleed Pixels
   # Tomb Raider(2013) (uses xinput9_1_0.dll)
   # WarFrame (32bit and 64bit executables, defaults to 64bit on 64bit OS)
