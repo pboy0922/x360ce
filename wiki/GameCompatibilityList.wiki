@@ -122,10 +122,11 @@ This is the new system utilised by r574+
 
 ===HookCOM===
 
-  # Assassin's Creed II
-  # Assassin's Creed: Brotherhood
-  # Assassin's Creed: Revelations
-  # Assassin's Creed III
+  # Assassin's Creed: II
+  # Assassin's Creed: Brotherhood (uses xinput9_1_0.dll for multiplayer)
+  # Assassin's Creed: Revelations (uses xinput9_1_0.dll for multiplayer)
+  # Assassin's Creed: III (uses xinput9_1_0.dll for multiplayer)
+  # Assassin's Creed: IV Black Flag (uses xinput9_1_0.dll for multiplayer)
   # Battlefield 3 (uses xinput9_1_0.dll)
   # Batman Arkham Asylum
   # Batman Arkham City (uses xinput9_1_0.dll)
