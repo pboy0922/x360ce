@@ -12,7 +12,7 @@
   # [http://www.microsoft.com/en-us/download/details.aspx?id=35 DirectX End-User Runtimes (June 2010)] (Required regardless of OS)
   # Depending on the DLL, either or both of the following
     * [http://www.microsoft.com/en-us/download/details.aspx?id=26999 Visual C++ Redistributable for Visual Studio 2010 SP1] (Most titles use the x86 runtime whether your OS is 64bit or not) or
-    * [http://www.microsoft.com/en-us/download/details.aspx?id=30679 Visual C++ Redistributable for Visual Studio 2012 Update 3] (Most titles use the x86 runtime whether your OS is 64bit or not)
+    * [http://www.microsoft.com/en-us/download/details.aspx?id=30679 Visual C++ Redistributable for Visual Studio 2012 Update 4] (Most titles use the x86 runtime whether your OS is 64bit or not)
 
 Notes: 
   * Windows 7 includes .net 3.5 and its updates to .net 2.0 and 3.0
