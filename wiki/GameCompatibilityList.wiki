@@ -112,6 +112,7 @@ This is the new system utilised by r574+
   # Sine-Mora
   # Sudeki (Steam) (uses xinput1_2.dll)
   # They Bleed Pixels
+  # Titanfall (32bit and 64bit executables, defaults to 64bit on 64bit OS)
   # Tomb Raider(2013) (uses xinput9_1_0.dll)
   # WarFrame (32bit and 64bit executables, defaults to 64bit on 64bit OS)
 
@@ -122,6 +123,8 @@ This is the new system utilised by r574+
 
 ===HookCOM===
 
+  # Ace Combat Assault Horizon
+  # Antichamber
   # Assassin's Creed: II
   # Assassin's Creed: Brotherhood (uses xinput9_1_0.dll for multiplayer)
   # Assassin's Creed: Revelations (uses xinput9_1_0.dll for multiplayer)
@@ -154,6 +157,7 @@ This is the new system utilised by r574+
   # FlatOut Ultimate Carnage
   # Grid
   # Grid 2
+  # Hotline Miami
   # Injustice: Gods Among Us Ultimate Edition
   # L.A. Noire
   # LEGO Indiana Jones: The Original Adventures
@@ -188,6 +192,7 @@ This is the new system utilised by r574+
   # Worms Revolution
   # XCOM Enemy Within
   # XCOM Enemy Unknown
+  # Yaiba - Ninja Gaiden Z
 
 ===HookSA===
 
