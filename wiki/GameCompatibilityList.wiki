@@ -25,7 +25,6 @@ To update the gdb, [https://x360ce.googlecode.com/svn/trunk/x360ce/Support/x360c
   # F1 2010
   # Fable 3
   # Fallout 3
-  # Far Cry 2
   # Ghostbusters
   # Guilty Gear Isuka
   # Guilty Gear X2 #Reload
@@ -94,6 +93,7 @@ This is the new system utilised by r574+
   # DuckTales Remastered
   # Dust: An Elysian Tail
   # Elder Scrolls V, The - Skyrim
+  # Far Cry 2
   # Fez
   # Final Exam
   # Godmode (uses xinput9_1_0.dll)
@@ -137,6 +137,7 @@ This is the new system utilised by r574+
   # BioShock Infinite
   # Blade Kitten
   # Brothers: A Tale of Two Sons
+  # Brutal Legend
   # Bulletstorm
   # Cave, The
   # Darksiders
@@ -149,6 +150,7 @@ This is the new system utilised by r574+
   # DmC - Devil May Cry
   # Dungeon Defenders
   # Enslaved: Odyssey to the West
+  # Farcry 3
   # FIFA 10
   # FIFA 11
   # FIFA 12
