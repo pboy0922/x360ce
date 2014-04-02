@@ -150,7 +150,7 @@ This is the new system utilised by r574+
   # DmC - Devil May Cry
   # Dungeon Defenders
   # Enslaved: Odyssey to the West
-  # Farcry 3
+  # Farcry 3 (If using Type 2 rumble, increase motor duration to 500) 
   # FIFA 10
   # FIFA 11
   # FIFA 12
