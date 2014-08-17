@@ -1,5 +1,6 @@
 #pragma once
 
+#ifndef LOG_DISABLED
 // C++ headers
 #include <cstdio>
 #include <cstdlib>
@@ -14,40 +15,27 @@
 #include <shlwapi.h>
 #pragma comment(lib, "shlwapi.lib")
 
-#if _MSC_VER < 1700
-#include "mutex.h"
-#else
 #include <mutex>
-#endif
 
 // warning C4127: conditional expression is constant
 #pragma warning(disable: 4127)
 
-#if 1
 #ifndef CURRENT_MODULE
 extern "C" IMAGE_DOS_HEADER __ImageBase;
 #define CURRENT_MODULE reinterpret_cast<HMODULE>(&__ImageBase)
 #endif
 
-#if _MSC_VER < 1700
-#define INITIALIZE_LOGGER std::unique_ptr<Logger> Logger::m_instance;
-#else
 #define INITIALIZE_LOGGER std::unique_ptr<Logger> Logger::m_instance; std::once_flag Logger::m_onceFlag;
-#endif
 
 class Logger
 {
 public:
 	static Logger& GetInstance()
 	{
-#if _MSC_VER < 1700
-		m_instance.reset(new Logger);
-#else
 		std::call_once(m_onceFlag,
 			[] {
 			m_instance.reset(new Logger);
 		});
-#endif
 		return *m_instance.get();
 	}
 
@@ -111,11 +99,7 @@ public:
 		bool con = m_console != nullptr;
 		if ((log || con) && format)
 		{
-#if _MSC_VER < 1700
-			lock_guard lock(m_mtx);
-#else
 			std::lock_guard<std::mutex> lock(m_mtx);
-#endif
 			static char* stamp = "[TIME]\t\t[THREAD]\t[LOG]";
 			if (stamp)
 			{
@@ -142,9 +126,7 @@ public:
 	}
 private:
 	static std::unique_ptr<Logger> m_instance;
-#if _MSC_VER >= 1700
 	static std::once_flag m_onceFlag;
-#endif
 
 	// block constructors
 	Logger(const Logger& src);
@@ -155,11 +137,7 @@ private:
 	FILE* m_console;
 	FILE* m_file;
 
-#if _MSC_VER < 1700
-	recursive_mutex m_mtx;
-#else
 	std::mutex m_mtx;
-#endif
 
 	Logger()
 	{

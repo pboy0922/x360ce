@@ -18,7 +18,6 @@
  */
 
 #include "stdafx.h"
-#include "globals.h"
 #include "version.h"
 #include "x360ce.h"
 #include "SWIP.h"
@@ -36,26 +35,23 @@ extern std::vector<Mapping> g_Mappings;
 DWORD startProcessId = NULL;
 DWORD startThreadId = NULL;
 std::string exename;
-iHook* pHooks = NULL;
+iHook g_Hooks;
 
 INITIALIZE_LOGGER;
 
 VOID InstallInputHooks()
 {
-	if (pHooks)
-	{
-		for (auto & device = g_Devices.begin(); device != g_Devices.end(); ++device)
-			pHooks->AddHook(device->dwUserIndex, device->productid, device->instanceid);
-	}
-	pHooks->ExecuteHooks();
+	for (auto & device = g_Devices.begin(); device != g_Devices.end(); ++device)
+		g_Hooks.AddHook(device->dwUserIndex, device->productid, device->instanceid);
+
+	g_Hooks.ExecuteHooks();
 }
 
 void __cdecl ExitInstance()
 {
-	if (hMsgWnd && DestroyWindow(hMsgWnd)) 
+	if (hMsgWnd && DestroyWindow(hMsgWnd))
 		PrintLog("Message window destroyed");
 
-	SAFE_DELETE(pHooks);
 	if (xinput.dll)
 	{
 		PrintLog("Unloading %s", ModuleFullPathA(xinput.dll).c_str());
@@ -66,7 +62,7 @@ void __cdecl ExitInstance()
 	PrintLog("Terminating x360ce, bye");
 }
 
-VOID InitInstance()
+BOOL InitInstance()
 {
 #if defined(DEBUG) | defined(_DEBUG)
 	int CurrentFlags;
@@ -77,25 +73,24 @@ VOID InitInstance()
 	_CrtSetDbgFlag(CurrentFlags);
 #endif
 
-	atexit(ExitInstance);
-
 	startThreadId = GetCurrentThreadId();
 	startProcessId = GetCurrentProcessId();
 	exename = ModuleFileNameA();
 
-	pHooks = new iHook();
 	ReadConfig();
 
 	PrintLog("x360ce %s [%s - %d]", PRODUCT_VERSION, exename.c_str(), startProcessId);
 	PrintLog("%s", windowsVersionName().c_str());
 
 	InstallInputHooks();
+
+	return TRUE;
 }
 
 extern "C" VOID WINAPI reset()
 {
 	PrintLog("%s", "Restarting");
-	SAFE_DELETE(pHooks);
+	g_Hooks.clear();
 
 	g_Devices.clear();
 	g_Mappings.clear();
@@ -111,6 +106,7 @@ extern "C" BOOL APIENTRY DllMain(HMODULE hModule, DWORD ul_reason_for_call, LPVO
 	{
 	case DLL_PROCESS_ATTACH:
 		DisableThreadLibraryCalls(hModule);
+		atexit(ExitInstance);
 		InitInstance();
 		break;
 

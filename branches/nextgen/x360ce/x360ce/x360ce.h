@@ -20,13 +20,10 @@
 #ifndef _X360CE_H_
 #define _X360CE_H_
 
-static const char * legal_notice = {
-	"\nx360ce - XBOX 360 Controller emulator\n"
-	"https://code.google.com/p/x360ce/\n\n"
-	"Copyright (C) 2013 Robert Krawczyk\n\n"
-	"This program is free software you can redistribute it and/or modify it under\n"
-	"the terms of the GNU Lesser General Public License as published by the Free\n"
-	"Software Foundation, either version 3 of the License, or any later version.\n" };
+#ifndef CURRENT_MODULE
+extern "C" IMAGE_DOS_HEADER __ImageBase;
+#define CURRENT_MODULE reinterpret_cast<HMODULE>(&__ImageBase)
+#endif
 
 extern HWND hMsgWnd;
 

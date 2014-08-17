@@ -22,6 +22,20 @@
 
 #include <Shlwapi.h>
 
+template <typename N>
+bool is_in_range_out(N val, N min, N max)
+{ 
+	if ((val) > (min) && (val) < (max)) return true;
+	return false;
+}
+
+template <typename N>
+bool is_in_range_in(N val, N min, N max)
+{
+	if ((val) >= (min) && (val) <= (max)) return true;
+	return false;
+}
+
 inline std::string ModuleFullPathA(HMODULE hModule = NULL)
 {
     char strPath[MAX_PATH];

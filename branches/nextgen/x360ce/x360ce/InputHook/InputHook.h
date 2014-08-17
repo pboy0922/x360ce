@@ -134,6 +134,11 @@ public:
 	iterator end() { return m_devices.end(); }
 	const_iterator cend() const { return m_devices.cend(); }
 
+	void clear()
+	{
+		m_devices.clear();
+	}
+
 	inline void Enable()
 	{
 		m_hookmask &= ~HOOK_DISABLE;

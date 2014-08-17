@@ -18,7 +18,6 @@
  */
 
 #include "stdafx.h"
-#include "globals.h"
 #include "Logger.h"
 #include "Misc.h"
 

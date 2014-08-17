@@ -21,7 +21,6 @@
 #define CINTERFACE
 
 #include <dinput.h>
-#include "globals.h"
 
 #include "InputHook.h"
 

@@ -60,8 +60,8 @@ public:
 
     virtual ~DInputFFB()
     {
-        if(effect[FFB_LEFTMOTOR]) effect[FFB_LEFTMOTOR]->Release();
-        if(effect[FFB_RIGHTMOTOR]) effect[FFB_RIGHTMOTOR]->Release();
+        if(effect[0]) effect[0]->Release();
+        if(effect[1]) effect[1]->Release();
     }
 
     LPDIRECTINPUTEFFECT effect[2];

@@ -259,6 +259,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Config.cpp" />
+    <ClCompile Include="OldConfig.cpp" />
     <ClCompile Include="DirectInput.cpp" />
     <ClCompile Include="dllmain.cpp" />
     <ClCompile Include="InputHook\HookDI.cpp" />
@@ -276,14 +277,13 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Config.h" />
+    <ClInclude Include="OldConfig.h" />
     <ClInclude Include="DirectInput.h" />
-    <ClInclude Include="globals.h" />
     <ClInclude Include="InputHook\InputHook.h" />
     <ClInclude Include="Logger.h" />
     <ClInclude Include="Misc.h" />
-    <ClInclude Include="mutex.h" />
-    <ClInclude Include="pstdint.h" />
     <ClInclude Include="resource.h" />
+    <ClInclude Include="SimpleIni.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="svnrev_template.h" />
     <ClInclude Include="SWIP.h" />
