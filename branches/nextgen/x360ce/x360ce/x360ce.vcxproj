@@ -258,8 +258,7 @@
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Config.cpp" />
-    <ClCompile Include="OldConfig.cpp" />
+    <ClCompile Include="ConfigIni.cpp" />
     <ClCompile Include="DirectInput.cpp" />
     <ClCompile Include="dllmain.cpp" />
     <ClCompile Include="InputHook\HookDI.cpp" />
@@ -277,7 +276,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Config.h" />
-    <ClInclude Include="OldConfig.h" />
+    <ClInclude Include="ConfigIni.h" />
     <ClInclude Include="DirectInput.h" />
     <ClInclude Include="InputHook\InputHook.h" />
     <ClInclude Include="Logger.h" />
@@ -286,8 +285,8 @@
     <ClInclude Include="SimpleIni.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="svnrev_template.h" />
-    <ClInclude Include="SWIP.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="Types.h" />
     <ClInclude Include="version.h" />
     <ClInclude Include="x360ce.h" />
   </ItemGroup>

@@ -1,22 +1,3 @@
-/*  x360ce - XBOX360 Controller Emulator
- *
- *  https://code.google.com/p/x360ce/
- *
- *  Copyright (C) 2002-2010 Racer_S
- *  Copyright (C) 2010-2013 Robert Krawczyk
- *
- *  x360ce is free software: you can redistribute it and/or modify it under the terms
- *  of the GNU Lesser General Public License as published by the Free Software Foundation,
- *  either version 3 of the License, or any later version.
- *
- *  x360ce is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
- *  without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
- *  PURPOSE.  See the GNU General Public License for more details.
- *
- *  You should have received a copy of the GNU General Public License along with x360ce.
- *  If not, see <http://www.gnu.org/licenses/>.
- */
-
 #include "stdafx.h"
 #include "version.h"
 #include "x360ce.h"
@@ -30,19 +11,22 @@
 extern WNDPROC oldWndProc;
 extern HWND hMsgWnd;
 extern std::vector<DInputDevice> g_Devices;
-extern std::vector<Mapping> g_Mappings;
+extern std::vector<Mappings::Mapping> g_Mappings;
 
 DWORD startProcessId = NULL;
 DWORD startThreadId = NULL;
 std::string exename;
 iHook g_Hooks;
+ConfigBase g_Config;
 
 INITIALIZE_LOGGER;
 
 VOID InstallInputHooks()
 {
-	for (auto & device = g_Devices.begin(); device != g_Devices.end(); ++device)
-		g_Hooks.AddHook(device->dwUserIndex, device->productid, device->instanceid);
+	for (auto & device : g_Devices)
+	{
+		g_Hooks.AddHook(device.dwUserIndex, device.productid, device.instanceid);
+	}
 
 	g_Hooks.ExecuteHooks();
 }

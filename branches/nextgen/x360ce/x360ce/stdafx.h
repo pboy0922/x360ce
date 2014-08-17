@@ -42,6 +42,7 @@
 // Windows Header Files:
 #include <windows.h>
 #include <xinput.h>
+#include <stdint.h>
 
 //C++
 #include <iostream>
@@ -49,4 +50,10 @@
 #include <string>
 #include <vector>
 #include <algorithm>
-#include <stdint.h>
+
+
+//TODO move this in nice place
+#include "Types.h"
+using std::string;
+using std::vector;
+
