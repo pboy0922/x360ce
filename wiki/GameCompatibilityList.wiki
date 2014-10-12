@@ -194,6 +194,7 @@ This is the new system utilised by r574+
   # Super Meat Boy (uses xinput9_1_0.dll)
   # Super Street Fighter IV: Arcade Edition (uses xinput9_1_0.dll and xinput1_3.dll)
   # Street Fighter x Tekken
+  # TERA
   # The Last Remnant
   # Tiny Brains
   # Trine (If using Type 2 rumble, increase motor duration to 500)
