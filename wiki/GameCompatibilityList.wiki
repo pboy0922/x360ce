@@ -7,7 +7,7 @@ To update the gdb, [https://x360ce.googlecode.com/svn/trunk/x360ce/Support/x360c
 
 =HookMode= 
 
-(Items in these lists are pending testing for the new hookmask system)
+Items in these lists are in need of testing with the new hookmask system
 
 == Normal Mode == 
 
@@ -124,6 +124,8 @@ This is the new system utilised by r574+
 ===HookCOM===
 
   # Ace Combat Assault Horizon
+  # Afterfall Insanity: Extended Edition
+  # Alice: Madness Returns
   # Antichamber
   # Assassin's Creed: II
   # Assassin's Creed: Brotherhood (uses xinput9_1_0.dll for multiplayer)
@@ -167,6 +169,8 @@ This is the new system utilised by r574+
   # Magicka
   # Mark of the Ninja
   # Mirror's Edge
+  # Mortal Kombat Arcade Kollection
+  # Mortal Kombat Komplete Edition
   # Need For Speed Most Wanted 2012
   # NBA 2k13
   # NBA 2k14
@@ -174,6 +178,7 @@ This is the new system utilised by r574+
   # Rayman Legends
   # Rayman Origins
   # Remember Me
+  # Rise of the Triad (2013)
   # Saints Row 2
   # Saints Row IV
   # Saints Row: The Third
@@ -187,6 +192,7 @@ This is the new system utilised by r574+
   # Super Meat Boy (uses xinput9_1_0.dll)
   # Super Street Fighter IV: Arcade Edition (uses xinput9_1_0.dll and xinput1_3.dll)
   # Street Fighter x Tekken
+  # The Last Remnant
   # Tiny Brains
   # Trine (If using Type 2 rumble, increase motor duration to 500)
   # Trine 2 (If using Type 2 rumble, increase motor duration to 500)
