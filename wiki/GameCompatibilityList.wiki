@@ -159,7 +159,7 @@ This is the new system utilised by r574+
   # FIFA 11
   # FIFA 12
   # FIFA 13
-  # FIFA 15
+  # FIFA 15 (uses xinput9_1_0.dll) (32bit and 64bit executables, always uses 64bit on 64bit OS)
   # FlatOut Ultimate Carnage
   # Grid
   # Grid 2
