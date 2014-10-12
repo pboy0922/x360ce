@@ -132,6 +132,7 @@ This is the new system utilised by r574+
   # Assassin's Creed: Revelations (uses xinput9_1_0.dll for multiplayer)
   # Assassin's Creed: III (uses xinput9_1_0.dll for multiplayer)
   # Assassin's Creed: IV Black Flag (uses xinput9_1_0.dll for multiplayer)
+  # Awesomenauts
   # Battlefield 3 (uses xinput9_1_0.dll)
   # Batman Arkham Asylum
   # Batman Arkham City (uses xinput9_1_0.dll)
@@ -145,6 +146,7 @@ This is the new system utilised by r574+
   # Darksiders
   # Darksiders 2
   # Dark Souls: Prepare to Die Edition
+  # Dark Souls II
   # Dead Island
   # Deadlight
   # DeathSpank
@@ -157,7 +159,7 @@ This is the new system utilised by r574+
   # FIFA 11
   # FIFA 12
   # FIFA 13
-  # FIFA 14
+  # FIFA 15
   # FlatOut Ultimate Carnage
   # Grid
   # Grid 2
@@ -215,10 +217,12 @@ This is the new system utilised by r574+
   # Assassin's Creed (HookCOM + HookDI + HookVIDPID + HookName)
   # Baconing, The (HookLL + HookCOM)
   # Burnout Paradise - The Ultimate Box (HookCOM + HookDI + HookVIDPID + HookName)
+  # FIFA 14 (HookCOM + HookDI + HookVIDPID + HookName)
   # Final Fantasy XIV: A Realm Reborn(HookCOM + HookDI + HookVIDPID)
   # I Am Alive (HookCOM + HookDI + HookVIDPID) (uses xinput9_1_0.dll)
   # Need for Speed: Rivals (HookCOM + HookDI + HookVIDPID) (uses xinput9_1_0.dll) (32bit and 64bit executables, always uses 64bit on 64bit OS)
   # Slam Bolt Scrappers (HookCOM + HookDI + HookVIDPID)
+  # Teenage Mutant Ninja Turtles: Out of Shadows (HookCOM + HookDI + HookVIDPID)
   # Tom Clancy's H.A.W.X (HookCOM + HookDI + HookVIDPID)
   # Tom Clancy's H.A.W.X 2 (HookCOM + HookDI + HookVIDPID)
   # Tom Clancy's Splinter Cell Blacklist(HookCOM + HookDI + HookVIDPID)
