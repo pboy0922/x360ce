@@ -188,6 +188,7 @@ This is the new system utilised by r574+
   # Shank 2
   # Skullgirls (uses xinput9_1_0.dll)
   # Sleeping Dogs
+  # Sleeping Dogs: Definitive Edition (64bit only) 
   # Sonic & All-Stars Racing Transformed
   # Sonic Generations
   # Street Fighter IV
