@@ -176,6 +176,7 @@ This is the new system utilised by r574+
   # Need For Speed Most Wanted 2012
   # NBA 2k13
   # NBA 2k14
+  # NBA 2k15
   # Outlast (32bit and 64bit executables, defaults to 64bit on 64bit OS)
   # Rayman Legends
   # Rayman Origins
@@ -188,7 +189,7 @@ This is the new system utilised by r574+
   # Shank 2
   # Skullgirls (uses xinput9_1_0.dll)
   # Sleeping Dogs
-  # Sleeping Dogs: Definitive Edition (64bit only) 
+  # Sleeping Dogs: Definitive Edition (uses xinput9_1_0.dll) (64bit only) 
   # Sonic & All-Stars Racing Transformed
   # Sonic Generations
   # Street Fighter IV
@@ -201,6 +202,7 @@ This is the new system utilised by r574+
   # Trine (If using Type 2 rumble, increase motor duration to 500)
   # Trine 2 (If using Type 2 rumble, increase motor duration to 500)
   # Vessel
+  # Watch Dogs
   # Worms Revolution
   # XCOM Enemy Within
   # XCOM Enemy Unknown
