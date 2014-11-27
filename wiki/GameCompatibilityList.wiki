@@ -127,7 +127,6 @@ This is the new system utilised by r574+
   # Afterfall Insanity: Extended Edition
   # Alice: Madness Returns
   # Antichamber
-  # Assassin's Creed: II
   # Assassin's Creed: Brotherhood (uses xinput9_1_0.dll for multiplayer)
   # Assassin's Creed: Revelations (uses xinput9_1_0.dll for multiplayer)
   # Assassin's Creed: III (uses xinput9_1_0.dll for multiplayer)
@@ -142,6 +141,8 @@ This is the new system utilised by r574+
   # Brothers: A Tale of Two Sons
   # Brutal Legend
   # Bulletstorm
+  # Call of Duty Advanced Warfare (64bit only)
+  # Call of Duty Ghosts (64bit only)
   # Cave, The
   # Darksiders
   # Darksiders 2
@@ -154,6 +155,7 @@ This is the new system utilised by r574+
   # DmC - Devil May Cry
   # Dungeon Defenders
   # Enslaved: Odyssey to the West
+  # Evil Within, The (64bit only)
   # Farcry 3 (If using Type 2 rumble, increase motor duration to 500) 
   # FIFA 10
   # FIFA 11
@@ -196,6 +198,7 @@ This is the new system utilised by r574+
   # Super Meat Boy (uses xinput9_1_0.dll)
   # Super Street Fighter IV: Arcade Edition (uses xinput9_1_0.dll and xinput1_3.dll)
   # Street Fighter x Tekken
+  # Syndicate
   # TERA
   # The Last Remnant
   # Tiny Brains
@@ -219,17 +222,20 @@ This is the new system utilised by r574+
 ===Multiple HookMasks===
 
   # Assassin's Creed (HookCOM + HookDI + HookVIDPID + HookName)
+  # Assassin's Creed: II (HookCOM + HookDI + HookVIDPID + HookName)
   # Baconing, The (HookLL + HookCOM)
   # Burnout Paradise - The Ultimate Box (HookCOM + HookDI + HookVIDPID + HookName)
   # FIFA 14 (HookCOM + HookDI + HookVIDPID + HookName)
   # Final Fantasy XIV: A Realm Reborn(HookCOM + HookDI + HookVIDPID)
   # I Am Alive (HookCOM + HookDI + HookVIDPID) (uses xinput9_1_0.dll)
+  # Kane & Lynch - Dead Men (HookCOM + HookDI + HookVIDPID + HookName)
   # Need for Speed: Rivals (HookCOM + HookDI + HookVIDPID) (uses xinput9_1_0.dll) (32bit and 64bit executables, always uses 64bit on 64bit OS)
   # Slam Bolt Scrappers (HookCOM + HookDI + HookVIDPID)
   # Teenage Mutant Ninja Turtles: Out of Shadows (HookCOM + HookDI + HookVIDPID)
   # Tom Clancy's H.A.W.X (HookCOM + HookDI + HookVIDPID)
   # Tom Clancy's H.A.W.X 2 (HookCOM + HookDI + HookVIDPID)
   # Tom Clancy's Splinter Cell Blacklist(HookCOM + HookDI + HookVIDPID)
+  # Tom Clancy's Splinter Cell Conviction(HookCOM + HookDI + HookVIDPID)
 
 === Notes: ===
   # All games utilise the x86 version of the xinput1_3.dll unless otherwise specified.
