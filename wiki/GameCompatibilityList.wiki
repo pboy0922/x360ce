@@ -136,6 +136,7 @@ This is the new system utilised by r574+
   # Batman Arkham Asylum
   # Batman Arkham City (uses xinput9_1_0.dll)
   # Batman Arkham Origins
+  # BioHazard 6 (needs dinput8.dll)
   # BioShock Infinite
   # Blade Kitten
   # Brothers: A Tale of Two Sons
@@ -146,7 +147,7 @@ This is the new system utilised by r574+
   # Cave, The
   # Darksiders
   # Darksiders 2
-  # Dark Souls: Prepare to Die Edition
+  # Dark Souls: Prepare to Die Edition (may need dinput8.dll with DSFIX)
   # Dark Souls II
   # Dead Island
   # Deadlight
@@ -183,6 +184,7 @@ This is the new system utilised by r574+
   # Rayman Legends
   # Rayman Origins
   # Remember Me
+  # Resident Evil 6 (needs dinput8.dll)
   # Rise of the Triad (2013)
   # Saints Row 2
   # Saints Row IV
@@ -239,6 +241,7 @@ This is the new system utilised by r574+
 
 === Notes: ===
   # All games utilise the x86 version of the xinput1_3.dll unless otherwise specified.
+  # Games do not need the dinput8.dll unless specified.
   # Most SEGA games do not display XBOX360 Controller buttons.
   # Blade Kitten does not display XBOX360 Controller buttons.
   # Saints Row 2 does not display XBOX360 Controller buttons.
