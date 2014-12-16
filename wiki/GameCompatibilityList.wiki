@@ -168,6 +168,7 @@ This is the new system utilised by r574+
   # Grid
   # Grid 2
   # Hotline Miami
+  # How to Survive
   # Injustice: Gods Among Us Ultimate Edition
   # L.A. Noire
   # LEGO Indiana Jones: The Original Adventures
