@@ -154,6 +154,7 @@ This is the new system utilised by r574+
   # DeathSpank
   # DeathSpank - Thongs of Virtue
   # DmC - Devil May Cry
+  # Dragon Age: Inquisition (uses xinput9_1_0.dll) (64bit only)
   # Dungeon Defenders
   # Enslaved: Odyssey to the West
   # Evil Within, The (64bit only)
