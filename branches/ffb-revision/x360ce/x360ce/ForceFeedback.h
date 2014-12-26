@@ -8,44 +8,55 @@ struct ForceFeedbackCaps
 {
     bool ConstantForce;
     bool PeriodicForce;
-    bool RampForce;
+
+    ForceFeedbackCaps()
+    {
+        ConstantForce = false;
+        PeriodicForce = false;
+    }
+};
+
+struct ForceFeedbackMotor
+{
+    u8 type;
+    u32 period;
+    float strength;
+    int actuator;
+    LPDIRECTINPUTEFFECT effect;
+
+    ForceFeedbackMotor()
+    {
+        type = 0;
+        period = 0;
+        strength = 1.0f;
+        actuator = -1;
+        effect = nullptr;
+    }
 };
 
 class ForceFeedback
 {
     friend class Controller;
+
 public:
     ForceFeedback(Controller* pController);
     virtual ~ForceFeedback();
 
     void Shutdown();
-
     bool SetState(XINPUT_VIBRATION* pVibration);
 
-    u32 m_LeftPeriod;
-    u32 m_RightPeriod;
     float m_ForcePercent;
-    u8 m_Type;
-    bool m_SwapMotors;
+    ForceFeedbackMotor m_LeftMotor;
+    ForceFeedbackMotor m_RightMotor;
 
 private:
-    static BOOL CALLBACK EnumFFAxesCallback(const DIDEVICEOBJECTINSTANCE* pdidoi, VOID* pContext);
+    static BOOL CALLBACK EnumFFAxesCallback(const DIDEVICEOBJECTINSTANCE* pdidoi, LPVOID pvRef);
     static BOOL CALLBACK EnumEffectsCallback(LPCDIEFFECTINFO di, LPVOID pvRef);
 
-    void SetCaps(const ForceFeedbackCaps& caps)
-    {
-        m_Caps = caps;
-    }
-
     bool IsSupported();
-
-    void StartEffects(DIEFFECT* effectType);
-    bool SetDeviceForcesEjocys(XINPUT_VIBRATION* pVibration);
-    bool SetDeviceForcesNew(XINPUT_VIBRATION* pVibration);
-    bool SetDeviceForcesFailsafe(XINPUT_VIBRATION* pVibration);
+    bool SetEffects(ForceFeedbackMotor& motor, LONG motorSpeed);
 
     Controller* m_pController;
-    std::vector<LPDIRECTINPUTEFFECT> m_effects;
-    u8 m_Axes;
     ForceFeedbackCaps m_Caps;
+    std::vector<DWORD> m_Actuators;
 };

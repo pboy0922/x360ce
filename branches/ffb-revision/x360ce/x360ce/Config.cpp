@@ -232,13 +232,20 @@ bool Config::ReadPadConfig(Controller* pController, const std::string& section, 
     pSWIP->Get(section, "UseForceFeedback", &pController->m_useforce);
     if (pController->m_useforce)
     {
-        pSWIP->Get(section, "SwapMotor", &pController->m_ForceFeedback.m_SwapMotors);
-        pSWIP->Get(section, "FFBType", &pController->m_ForceFeedback.m_Type);
         pSWIP->Get(section, "ForcePercent", &pController->m_ForceFeedback.m_ForcePercent, 100);
         pController->m_ForceFeedback.m_ForcePercent *= 0.01f;
 
-        pSWIP->Get(section, "LeftMotorPeriod", &pController->m_ForceFeedback.m_LeftPeriod, 60);
-        pSWIP->Get(section, "RightMotorPeriod", &pController->m_ForceFeedback.m_RightPeriod, 20);
+        pSWIP->Get(section, "LeftMotorType", &pController->m_ForceFeedback.m_LeftMotor.type, 0);
+        pSWIP->Get(section, "LeftMotorPeriod", &pController->m_ForceFeedback.m_LeftMotor.period, 100);
+        pSWIP->Get(section, "LeftMotorActuator", &pController->m_ForceFeedback.m_LeftMotor.actuator, 0);
+        pSWIP->Get(section, "LeftMotorStrength", &pController->m_ForceFeedback.m_LeftMotor.strength, 100);
+        pController->m_ForceFeedback.m_LeftMotor.strength *= 0.01f;
+
+        pSWIP->Get(section, "RightMotorType", &pController->m_ForceFeedback.m_RightMotor.type, 0);
+        pSWIP->Get(section, "RightMotorPeriod", &pController->m_ForceFeedback.m_RightMotor.period, 100);
+        pSWIP->Get(section, "RightMotorActuator", &pController->m_ForceFeedback.m_RightMotor.actuator, 1);
+        pSWIP->Get(section, "RightMotorStrength", &pController->m_ForceFeedback.m_RightMotor.strength, 100);
+        pController->m_ForceFeedback.m_RightMotor.strength *= 0.01f;
     }
 
     return true;
