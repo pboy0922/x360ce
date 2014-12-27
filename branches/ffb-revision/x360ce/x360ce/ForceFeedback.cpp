@@ -11,10 +11,10 @@
 ForceFeedback::ForceFeedback(Controller* pController) :
 m_pController(pController)
 {
-    m_ForcePercent = 1.0;
-};
+    m_ForcePercent = 1.0f;
+}
 
-ForceFeedback::~ForceFeedback() {};
+ForceFeedback::~ForceFeedback() {}
 
 void ForceFeedback::Shutdown()
 {
@@ -25,7 +25,18 @@ void ForceFeedback::Shutdown()
     if (m_RightMotor.effect) m_RightMotor.effect->Release();
 }
 
-BOOL CALLBACK ForceFeedback::EnumFFAxesCallback(LPCDIDEVICEOBJECTINSTANCE pdidoi, LPVOID pvRef)
+DWORD ForceFeedback::SetState(XINPUT_VIBRATION* pVibration)
+{
+    if (ControllerManager::Get().XInputEnabled())
+    {
+        SetEffects(m_LeftMotor, pVibration->wLeftMotorSpeed);
+        SetEffects(m_RightMotor, pVibration->wRightMotorSpeed);
+    }
+
+    return ERROR_SUCCESS;
+}
+
+BOOL CALLBACK ForceFeedback::EnumActuatorsCallback(LPCDIDEVICEOBJECTINSTANCE pdidoi, LPVOID pvRef)
 {
     ForceFeedback* ffb = (ForceFeedback*)pvRef;
 
@@ -38,13 +49,12 @@ BOOL CALLBACK ForceFeedback::EnumFFAxesCallback(LPCDIDEVICEOBJECTINSTANCE pdidoi
     return DIENUM_CONTINUE;
 }
 
-BOOL CALLBACK ForceFeedback::EnumEffectsCallback(LPCDIEFFECTINFO di, LPVOID pvRef)
+BOOL CALLBACK ForceFeedback::EnumEffectsCallback(LPCDIEFFECTINFO pdiei, LPVOID pvRef)
 {
-    ForceFeedbackCaps caps;
-    caps.ConstantForce = DIEFT_GETTYPE(di->dwEffType) == DIEFT_CONSTANTFORCE;
-    caps.PeriodicForce = DIEFT_GETTYPE(di->dwEffType) == DIEFT_PERIODIC;
-
-    PrintLog("ForceFeedback effect '%s'. IsConstant = %d, IsPeriodic = %d", di->tszName, caps.ConstantForce, caps.PeriodicForce);
+    Caps caps;
+    caps.ConstantForce = DIEFT_GETTYPE(pdiei->dwEffType) == DIEFT_CONSTANTFORCE;
+    caps.PeriodicForce = DIEFT_GETTYPE(pdiei->dwEffType) == DIEFT_PERIODIC;
+    PrintLog("ForceFeedback effect '%s'. IsConstant = %d, IsPeriodic = %d", pdiei->tszName, caps.ConstantForce, caps.PeriodicForce);
 
     ForceFeedback* ffb = (ForceFeedback*)pvRef;
     ffb->m_Caps.ConstantForce |= caps.ConstantForce;
@@ -64,22 +74,16 @@ bool ForceFeedback::IsSupported()
         PrintLog("[PAD%d] IsForceSupported: GetCapabilities returned HR = %X", m_pController->m_user + 1, hr);
         return false;
     }
+
     bool ffSupported = ((deviceCaps.dwFlags & DIDC_FORCEFEEDBACK) == DIDC_FORCEFEEDBACK);
     PrintLog("[PAD%d] IsForceSupported: 0x%08X %s", m_pController->m_user + 1, deviceCaps.dwFlags, ffSupported == true ? "YES" : "NO");
-
     if (ffSupported)
     {
         m_Actuators.clear();
+        hr = m_pController->m_pDevice->EnumObjects(EnumActuatorsCallback, this, DIDFT_AXIS);
+        if (FAILED(hr)) PrintLog("[PAD%d] EnumActuatorsCallback failed with code HR = %X", m_pController->m_user + 1, hr);
 
-        HRESULT hr = m_pController->m_pDevice->EnumObjects(EnumFFAxesCallback, this, DIDFT_AXIS);
-        if (FAILED(hr)) PrintLog("[PAD%d] EnumFFAxesCallback failed with code HR = %X", m_pController->m_user + 1, hr);
-
-        if (m_Actuators.empty())
-        {
-            m_pController->m_useforce = false;
-            return false;
-        }
-        else
+        if (m_Actuators.size() > 0)
         {
             m_pController->m_pDevice->EnumEffects(EnumEffectsCallback, this, DIEFT_ALL);
             m_pController->m_pDevice->SendForceFeedbackCommand(DISFFC_RESET);
@@ -87,24 +91,11 @@ bool ForceFeedback::IsSupported()
             return true;
         }
     }
+
     return false;
 }
 
-bool ForceFeedback::SetState(XINPUT_VIBRATION* pVibration)
-{
-    if (!ControllerManager::Get().XInputEnabled())
-    {
-        // Clear state
-        if (pVibration) ZeroMemory(pVibration, sizeof(XINPUT_VIBRATION));
-        return true;
-    }
-
-    SetEffects(m_LeftMotor, pVibration->wLeftMotorSpeed);
-    SetEffects(m_RightMotor, pVibration->wRightMotorSpeed);
-    return true;
-}
-
-bool ForceFeedback::SetEffects(ForceFeedbackMotor& motor, LONG motorSpeed)
+bool ForceFeedback::SetEffects(Motor& motor, LONG speed)
 {
     DWORD actuator = 0;
     for (auto itr = m_Actuators.begin(); itr != m_Actuators.end(); itr++)
@@ -116,7 +107,7 @@ bool ForceFeedback::SetEffects(ForceFeedbackMotor& motor, LONG motorSpeed)
     if (!actuator) return false;
 
     LONG lDirection = 0;
-    LONG force = (LONG)((float)motorSpeed / 65535 * DI_FFNOMINALMAX * m_ForcePercent);
+    LONG force = (LONG)((float)speed / 65535 * DI_FFNOMINALMAX * m_ForcePercent);
     force = clamp(force, 0, DI_FFNOMINALMAX);
 
     DIEFFECT effectType;
@@ -149,17 +140,17 @@ bool ForceFeedback::SetEffects(ForceFeedbackMotor& motor, LONG motorSpeed)
         periodicForce.dwPeriod = motor.period * 1000;
         periodicForce.dwMagnitude = (DWORD)force;
         periodicForce.dwPhase = 0;
-        periodicForce.lOffset = 0;
+        periodicForce.lOffset = 1000;
         break;
     case 2:
         if (!m_Caps.PeriodicForce) return false;
-        effectGUID = GUID_SawtoothUp;
+        effectGUID = GUID_SawtoothDown;
         effectType.cbTypeSpecificParams = sizeof(DIPERIODIC);
         effectType.lpvTypeSpecificParams = &periodicForce;
         periodicForce.dwPeriod = motor.period * 1000;
         periodicForce.dwMagnitude = (DWORD)force;
-        periodicForce.dwPhase = 0;
-        periodicForce.lOffset = 0;
+        periodicForce.dwPhase = 18000;
+        periodicForce.lOffset = 1000;
         break;
     default:
         if (!m_Caps.ConstantForce) return false;
@@ -173,14 +164,13 @@ bool ForceFeedback::SetEffects(ForceFeedbackMotor& motor, LONG motorSpeed)
     HRESULT hr;
     if (!motor.effect)
     {
-        LPDIRECTINPUTEFFECT effect;
-        hr = m_pController->m_pDevice->CreateEffect(effectGUID, &effectType, &effect, NULL);
+        hr = m_pController->m_pDevice->CreateEffect(effectGUID, &effectType, &motor.effect, NULL);
         if (FAILED(hr))
         {
+            motor.effect = nullptr;
             PrintLog("[PAD%d] CreateEffect failed with code HR = %X, FFBType = %u", m_pController->m_user + 1, hr, motor.type);
             return false;
         }
-        motor.effect = effect;
     }
 
     if (force == 0) motor.effect->Stop();

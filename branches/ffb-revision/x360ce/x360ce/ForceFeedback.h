@@ -4,59 +4,58 @@
 #include "Config.h"
 #include "Mutex.h"
 
-struct ForceFeedbackCaps
-{
-    bool ConstantForce;
-    bool PeriodicForce;
-
-    ForceFeedbackCaps()
-    {
-        ConstantForce = false;
-        PeriodicForce = false;
-    }
-};
-
-struct ForceFeedbackMotor
-{
-    u8 type;
-    u32 period;
-    float strength;
-    int actuator;
-    LPDIRECTINPUTEFFECT effect;
-
-    ForceFeedbackMotor()
-    {
-        type = 0;
-        period = 0;
-        strength = 1.0f;
-        actuator = -1;
-        effect = nullptr;
-    }
-};
-
 class ForceFeedback
 {
     friend class Controller;
 
+    struct Caps
+    {
+        Caps()
+        {
+            ConstantForce = false;
+            PeriodicForce = false;
+        }
+
+        bool ConstantForce;
+        bool PeriodicForce;
+    };
+
+    struct Motor
+    {
+        Motor() {
+            type = 0;
+            period = 0;
+            strength = 1.0f;
+            actuator = -1;
+            effect = nullptr;
+        }
+
+        u8 type;
+        u32 period;
+        float strength;
+        int actuator;
+        LPDIRECTINPUTEFFECT effect;
+    };
+
 public:
     ForceFeedback(Controller* pController);
-    virtual ~ForceFeedback();
+    ~ForceFeedback();
 
     void Shutdown();
-    bool SetState(XINPUT_VIBRATION* pVibration);
+    DWORD SetState(XINPUT_VIBRATION* pVibration);
 
     float m_ForcePercent;
-    ForceFeedbackMotor m_LeftMotor;
-    ForceFeedbackMotor m_RightMotor;
+    Motor m_LeftMotor;
+    Motor m_RightMotor;
 
 private:
-    static BOOL CALLBACK EnumFFAxesCallback(const DIDEVICEOBJECTINSTANCE* pdidoi, LPVOID pvRef);
-    static BOOL CALLBACK EnumEffectsCallback(LPCDIEFFECTINFO di, LPVOID pvRef);
+    static BOOL CALLBACK EnumActuatorsCallback(LPCDIDEVICEOBJECTINSTANCE pdidoi, LPVOID pvRef);
+    static BOOL CALLBACK EnumEffectsCallback(LPCDIEFFECTINFO pdiei, LPVOID pvRef);
 
     bool IsSupported();
-    bool SetEffects(ForceFeedbackMotor& motor, LONG motorSpeed);
+    bool SetEffects(Motor& motor, LONG speed);
 
     Controller* m_pController;
-    ForceFeedbackCaps m_Caps;
+    Caps m_Caps;
     std::vector<DWORD> m_Actuators;
 };
