@@ -106,9 +106,15 @@ bool ForceFeedback::SetState(XINPUT_VIBRATION* pVibration)
 
 bool ForceFeedback::SetEffects(ForceFeedbackMotor& motor, LONG motorSpeed)
 {
-    if (motor.actuator < 0 || motor.actuator >= (int)m_Actuators.size()) return false;
+    DWORD actuator = 0;
+    for (auto itr = m_Actuators.begin(); itr != m_Actuators.end(); itr++)
+        if (DIDFT_GETINSTANCE(*itr) == motor.actuator)
+        {
+            actuator = *itr;
+            break;
+        }
+    if (!actuator) return false;
 
-    DWORD actuator = m_Actuators[motor.actuator];
     LONG lDirection = 0;
     LONG force = (LONG)((float)motorSpeed / 65535 * DI_FFNOMINALMAX * m_ForcePercent);
     force = clamp(force, 0, DI_FFNOMINALMAX);
