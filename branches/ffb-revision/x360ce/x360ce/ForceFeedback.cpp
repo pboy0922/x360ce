@@ -30,7 +30,10 @@ BOOL CALLBACK ForceFeedback::EnumFFAxesCallback(LPCDIDEVICEOBJECTINSTANCE pdidoi
     ForceFeedback* ffb = (ForceFeedback*)pvRef;
 
     if ((pdidoi->dwFlags & DIDOI_FFACTUATOR) != 0)
+    {
+        PrintLog("Found actuator: '%s', ID: %u", pdidoi->tszName, DIDFT_GETINSTANCE(pdidoi->dwType));
         ffb->m_Actuators.push_back(pdidoi->dwType);
+    }
 
     return DIENUM_CONTINUE;
 }
