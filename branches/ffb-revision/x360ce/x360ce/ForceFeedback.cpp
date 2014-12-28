@@ -107,7 +107,7 @@ bool ForceFeedback::SetEffects(Motor& motor, LONG speed)
     if (!actuator) return false;
 
     LONG lDirection = 0;
-    LONG force = (LONG)((float)speed / 65535 * DI_FFNOMINALMAX * m_ForcePercent);
+    LONG force = (LONG)((float)speed / 65535 * DI_FFNOMINALMAX * motor.strength);
     force = clamp(force, 0, DI_FFNOMINALMAX);
 
     DIEFFECT effectType;
@@ -116,7 +116,7 @@ bool ForceFeedback::SetEffects(Motor& motor, LONG speed)
     effectType.dwFlags = DIEFF_CARTESIAN | DIEFF_OBJECTIDS;
     effectType.dwDuration = INFINITE;
     effectType.dwSamplePeriod = 0;
-    effectType.dwGain = (DWORD)(motor.strength * DI_FFNOMINALMAX);
+    effectType.dwGain = (DWORD)(m_ForcePercent * DI_FFNOMINALMAX);
     effectType.dwTriggerButton = DIEB_NOTRIGGER;
     effectType.dwTriggerRepeatInterval = 0;
     effectType.cAxes = 1;
@@ -138,19 +138,19 @@ bool ForceFeedback::SetEffects(Motor& motor, LONG speed)
         effectType.cbTypeSpecificParams = sizeof(DIPERIODIC);
         effectType.lpvTypeSpecificParams = &periodicForce;
         periodicForce.dwPeriod = motor.period * 1000;
-        periodicForce.dwMagnitude = (DWORD)force;
+        periodicForce.dwMagnitude = (DWORD)((float)(force + DI_FFNOMINALMAX) / 2);
         periodicForce.dwPhase = 0;
-        periodicForce.lOffset = 1000;
+        periodicForce.lOffset = 0;
         break;
     case 2:
         if (!m_Caps.PeriodicForce) return false;
-        effectGUID = GUID_SawtoothDown;
+        effectGUID = GUID_SawtoothUp;
         effectType.cbTypeSpecificParams = sizeof(DIPERIODIC);
         effectType.lpvTypeSpecificParams = &periodicForce;
         periodicForce.dwPeriod = motor.period * 1000;
-        periodicForce.dwMagnitude = (DWORD)force;
-        periodicForce.dwPhase = 18000;
-        periodicForce.lOffset = 1000;
+        periodicForce.dwMagnitude = (DWORD)((float)(force + DI_FFNOMINALMAX) / 2);
+        periodicForce.dwPhase = 0;
+        periodicForce.lOffset = 0;
         break;
     default:
         if (!m_Caps.ConstantForce) return false;
