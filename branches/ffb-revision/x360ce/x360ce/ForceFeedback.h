@@ -3,6 +3,7 @@
 #include <dinput.h>
 #include "Config.h"
 #include "Mutex.h"
+#include "Timer.h"
 
 class ForceFeedback
 {
@@ -28,7 +29,7 @@ class ForceFeedback
             strength = 1.0f;
             actuator = -1;
             effect = nullptr;
-            lastStarted = 0;
+            lastStarted = Timer();
         }
 
         u8 type;
@@ -36,7 +37,7 @@ class ForceFeedback
         float strength;
         int actuator;
         LPDIRECTINPUTEFFECT effect;
-        DWORD lastStarted;
+        Timer lastStarted;
     };
 
 public:

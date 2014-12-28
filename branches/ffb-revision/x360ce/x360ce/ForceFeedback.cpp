@@ -173,7 +173,7 @@ bool ForceFeedback::SetEffects(Motor& motor, LONG speed)
         }
     }
 
-    if (GetTickCount() - motor.lastStarted > motor.period)
+    if ((u32)motor.lastStarted.GetElapsedTimeInMilliSec() > motor.period)
         if (force == 0) motor.effect->Stop();
         else
         {
@@ -184,7 +184,7 @@ bool ForceFeedback::SetEffects(Motor& motor, LONG speed)
                 PrintLog("[PAD%d] SetParameters failed with code HR = %X, FFBType = %u", m_pController->m_user + 1, hr, motor.type);
                 return false;
             }
-            motor.lastStarted = GetTickCount();
+            motor.lastStarted.Start();
         }
 
     return true;
