@@ -174,7 +174,7 @@ bool ForceFeedback::SetEffects(Motor& motor, LONG speed)
     }
 
     if (force == 0) motor.effect->Stop();
-    else
+    else if (effectType.lpvTypeSpecificParams != &periodicForce || GetTickCount() - motor.lastStarted > motor.period)
     {
         u32 flags = DIEP_START | DIEP_GAIN | DIEP_TYPESPECIFICPARAMS;
         hr = motor.effect->SetParameters(&effectType, flags);
@@ -183,6 +183,7 @@ bool ForceFeedback::SetEffects(Motor& motor, LONG speed)
             PrintLog("[PAD%d] SetParameters failed with code HR = %X, FFBType = %u", m_pController->m_user + 1, hr, motor.type);
             return false;
         }
+        motor.lastStarted = GetTickCount();
     }
 
     return true;

@@ -28,6 +28,7 @@ class ForceFeedback
             strength = 1.0f;
             actuator = -1;
             effect = nullptr;
+            lastStarted = 0;
         }
 
         u8 type;
@@ -35,6 +36,7 @@ class ForceFeedback
         float strength;
         int actuator;
         LPDIRECTINPUTEFFECT effect;
+        DWORD lastStarted;
     };
 
 public:
