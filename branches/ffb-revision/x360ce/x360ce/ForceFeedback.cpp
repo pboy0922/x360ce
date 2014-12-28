@@ -144,7 +144,7 @@ bool ForceFeedback::SetEffects(Motor& motor, LONG speed)
         break;
     case 2:
         if (!m_Caps.PeriodicForce) return false;
-        effectGUID = GUID_SawtoothUp;
+        effectGUID = GUID_SawtoothDown;
         effectType.cbTypeSpecificParams = sizeof(DIPERIODIC);
         effectType.lpvTypeSpecificParams = &periodicForce;
         periodicForce.dwPeriod = motor.period * 1000;
@@ -173,18 +173,19 @@ bool ForceFeedback::SetEffects(Motor& motor, LONG speed)
         }
     }
 
-    if (force == 0) motor.effect->Stop();
-    else if (effectType.lpvTypeSpecificParams != &periodicForce || GetTickCount() - motor.lastStarted > motor.period)
-    {
-        u32 flags = DIEP_START | DIEP_GAIN | DIEP_TYPESPECIFICPARAMS;
-        hr = motor.effect->SetParameters(&effectType, flags);
-        if (FAILED(hr))
+    if (GetTickCount() - motor.lastStarted > motor.period)
+        if (force == 0) motor.effect->Stop();
+        else
         {
-            PrintLog("[PAD%d] SetParameters failed with code HR = %X, FFBType = %u", m_pController->m_user + 1, hr, motor.type);
-            return false;
+            u32 flags = DIEP_START | DIEP_GAIN | DIEP_TYPESPECIFICPARAMS;
+            hr = motor.effect->SetParameters(&effectType, flags);
+            if (FAILED(hr))
+            {
+                PrintLog("[PAD%d] SetParameters failed with code HR = %X, FFBType = %u", m_pController->m_user + 1, hr, motor.type);
+                return false;
+            }
+            motor.lastStarted = GetTickCount();
         }
-        motor.lastStarted = GetTickCount();
-    }
 
     return true;
 }
