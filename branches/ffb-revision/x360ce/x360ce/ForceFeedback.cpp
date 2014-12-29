@@ -12,12 +12,15 @@ ForceFeedback::ForceFeedback(Controller* pController) :
 m_pController(pController)
 {
     m_ForcePercent = 1.0f;
+    m_hTimer = nullptr;
 }
 
 ForceFeedback::~ForceFeedback() {}
 
 void ForceFeedback::Shutdown()
 {
+    DeleteTimerQueueTimer(nullptr, m_hTimer, nullptr);
+
     if (m_pController->m_pDevice)
         m_pController->m_pDevice->SendForceFeedbackCommand(DISFFC_RESET);
 
@@ -27,11 +30,13 @@ void ForceFeedback::Shutdown()
 
 DWORD ForceFeedback::SetState(XINPUT_VIBRATION* pVibration)
 {
-    if (ControllerManager::Get().XInputEnabled())
-    {
-        SetEffects(m_LeftMotor, pVibration->wLeftMotorSpeed);
-        SetEffects(m_RightMotor, pVibration->wRightMotorSpeed);
-    }
+    m_LeftMotor.periodBufferMax = std::max(m_LeftMotor.periodBufferMax, (LONG)pVibration->wLeftMotorSpeed);
+    if (m_LeftMotor.periodBufferMax == pVibration->wLeftMotorSpeed) m_LeftMotor.periodBufferLast = -1;
+    else m_LeftMotor.periodBufferLast = pVibration->wLeftMotorSpeed;
+
+    m_RightMotor.periodBufferMax = std::max(m_RightMotor.periodBufferMax, (LONG)pVibration->wRightMotorSpeed);
+    if (m_RightMotor.periodBufferMax == pVibration->wRightMotorSpeed) m_RightMotor.periodBufferLast = -1;
+    else m_RightMotor.periodBufferLast = pVibration->wRightMotorSpeed;
 
     return ERROR_SUCCESS;
 }
@@ -63,6 +68,37 @@ BOOL CALLBACK ForceFeedback::EnumEffectsCallback(LPCDIEFFECTINFO pdiei, LPVOID p
     return DIENUM_CONTINUE;
 }
 
+void CALLBACK ForceFeedback::ProcessRequests(PVOID lpParameter, BOOLEAN TimerOrWaitFired)
+{
+    if (!ControllerManager::Get().XInputEnabled()) return;
+
+    ForceFeedback* ffb = (ForceFeedback *)lpParameter;
+
+    if (ffb->m_LeftMotor.strength > 0.0f && ffb->m_LeftMotor.period > 0 &&
+        ((ffb->m_LeftMotor.currentForce == 0  && ffb->m_LeftMotor.periodBufferMax > 0) ||
+        ffb->m_LeftMotor.timer.GetElapsedTimeInMilliSec() > ffb->m_LeftMotor.period))
+    {
+        if (ffb->m_LeftMotor.periodBufferMax >= 0)
+        {
+            ffb->SetEffects(ffb->m_LeftMotor, ffb->m_LeftMotor.periodBufferMax);
+            ffb->m_LeftMotor.periodBufferMax = ffb->m_LeftMotor.periodBufferLast;
+            ffb->m_LeftMotor.periodBufferLast = -1;
+        }
+    }
+
+    if (ffb->m_RightMotor.strength > 0.0f && ffb->m_RightMotor.period > 0 &&
+        ((ffb->m_RightMotor.currentForce == 0 && ffb->m_RightMotor.periodBufferMax > 0) ||
+        ffb->m_RightMotor.timer.GetElapsedTimeInMilliSec() > ffb->m_RightMotor.period))
+    {
+        if (ffb->m_RightMotor.periodBufferMax >= 0)
+        {
+            ffb->SetEffects(ffb->m_RightMotor, ffb->m_RightMotor.periodBufferMax);
+            ffb->m_RightMotor.periodBufferMax = ffb->m_RightMotor.periodBufferLast;
+            ffb->m_RightMotor.periodBufferLast = -1;
+        }
+    }
+}
+
 bool ForceFeedback::IsSupported()
 {
     DIDEVCAPS deviceCaps;
@@ -88,6 +124,7 @@ bool ForceFeedback::IsSupported()
             m_pController->m_pDevice->EnumEffects(EnumEffectsCallback, this, DIEFT_ALL);
             m_pController->m_pDevice->SendForceFeedbackCommand(DISFFC_RESET);
             m_pController->m_pDevice->SendForceFeedbackCommand(DISFFC_SETACTUATORSON);
+            CreateTimerQueueTimer(&m_hTimer, nullptr, &ProcessRequests, this, m_UpdateInterval, m_UpdateInterval, 0);
             return true;
         }
     }
@@ -97,6 +134,7 @@ bool ForceFeedback::IsSupported()
 
 bool ForceFeedback::SetEffects(Motor& motor, LONG speed)
 {
+    motor.currentForce = 0;
     DWORD actuator = 0;
     for (auto itr = m_Actuators.begin(); itr != m_Actuators.end(); itr++)
         if (DIDFT_GETINSTANCE(*itr) == motor.actuator)
@@ -122,7 +160,7 @@ bool ForceFeedback::SetEffects(Motor& motor, LONG speed)
     effectType.cAxes = 1;
     effectType.rgdwAxes = &actuator;
     effectType.rglDirection = &lDirection;
-    effectType.lpEnvelope = NULL;
+    effectType.lpEnvelope = nullptr;
     effectType.dwStartDelay = 0;
     effectType.lpvTypeSpecificParams = nullptr;
 
@@ -164,7 +202,7 @@ bool ForceFeedback::SetEffects(Motor& motor, LONG speed)
     HRESULT hr;
     if (!motor.effect)
     {
-        hr = m_pController->m_pDevice->CreateEffect(effectGUID, &effectType, &motor.effect, NULL);
+        hr = m_pController->m_pDevice->CreateEffect(effectGUID, &effectType, &motor.effect, nullptr);
         if (FAILED(hr))
         {
             motor.effect = nullptr;
@@ -173,19 +211,19 @@ bool ForceFeedback::SetEffects(Motor& motor, LONG speed)
         }
     }
 
-    if ((u32)motor.lastStarted.GetElapsedTimeInMilliSec() > motor.period)
-        if (force == 0) motor.effect->Stop();
-        else
+    if (force == 0) motor.effect->Stop();
+    else
+    {
+        u32 flags = DIEP_START | DIEP_GAIN | DIEP_TYPESPECIFICPARAMS;
+        hr = motor.effect->SetParameters(&effectType, flags);
+        if (FAILED(hr))
         {
-            u32 flags = DIEP_START | DIEP_GAIN | DIEP_TYPESPECIFICPARAMS;
-            hr = motor.effect->SetParameters(&effectType, flags);
-            if (FAILED(hr))
-            {
-                PrintLog("[PAD%d] SetParameters failed with code HR = %X, FFBType = %u", m_pController->m_user + 1, hr, motor.type);
-                return false;
-            }
-            motor.lastStarted.Start();
+            PrintLog("[PAD%d] SetParameters failed with code HR = %X, FFBType = %u", m_pController->m_user + 1, hr, motor.type);
+            return false;
         }
+        motor.timer.Start();
+    }
+    motor.currentForce = force;
 
     return true;
 }

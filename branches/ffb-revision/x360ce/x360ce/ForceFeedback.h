@@ -28,16 +28,23 @@ class ForceFeedback
             period = 0;
             strength = 1.0f;
             actuator = -1;
+
             effect = nullptr;
-            lastStarted = Timer();
+            currentForce = 0;
+            periodBufferMax = -1;
+            periodBufferLast = -1;
         }
 
         u8 type;
         u32 period;
         float strength;
         int actuator;
+
+        Timer timer;
         LPDIRECTINPUTEFFECT effect;
-        Timer lastStarted;
+        LONG currentForce;
+        LONG periodBufferMax;
+        LONG periodBufferLast;
     };
 
 public:
@@ -50,10 +57,12 @@ public:
     float m_ForcePercent;
     Motor m_LeftMotor;
     Motor m_RightMotor;
+    u32 m_UpdateInterval;
 
 private:
     static BOOL CALLBACK EnumActuatorsCallback(LPCDIDEVICEOBJECTINSTANCE pdidoi, LPVOID pvRef);
     static BOOL CALLBACK EnumEffectsCallback(LPCDIEFFECTINFO pdiei, LPVOID pvRef);
+    static void CALLBACK ProcessRequests(PVOID lpParameter, BOOLEAN TimerOrWaitFired);
 
     bool IsSupported();
     bool SetEffects(Motor& motor, LONG speed);
@@ -61,4 +70,5 @@ private:
     Controller* m_pController;
     Caps m_Caps;
     std::vector<DWORD> m_Actuators;
+    HANDLE m_hTimer;
 };
