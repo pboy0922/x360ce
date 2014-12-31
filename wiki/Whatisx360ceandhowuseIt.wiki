@@ -6,19 +6,21 @@
 = System Requirements =
 
   # Windows XP SP3 and newer.
-  # [http://www.microsoft.com/en-us/download/details.aspx?id=21 .NET 3.5 (Also installs 2.0 and 3.0)] (Included in Windows 7)
-  # [http://www.microsoft.com/en-us/download/details.aspx?id=30653 .NET 4.0 (link to 4.5, also installs 4.0)] (Included with Windows 8)
+    * Windows XP SP3 is only supported in VS2010 library.
+  # [http://www.microsoft.com/en-us/download/details.aspx?id=21 .NET 3.5 (also installs 2.0 and 3.0)] (included in Windows 7)
+  # [http://www.microsoft.com/en-us/download/details.aspx?id=30653 .NET 4.0 (link to 4.5, also installs 4.0)] (included with Windows 8)
     * .NET 4.5 is not supported on Windows XP SP3, download .NET 4.0 from [http://www.microsoft.com/en-us/download/details.aspx?id=17851 here].
   # [http://www.microsoft.com/en-us/download/details.aspx?id=35 DirectX End-User Runtimes (June 2010)] (Required regardless of OS)
-  # Depending on the DLL, either or both of the following
-    * [http://www.microsoft.com/en-us/download/details.aspx?id=26999 Visual C++ Redistributable for Visual Studio 2010 SP1] (Most titles use the x86 runtime whether your OS is 64bit or not) or
-    * [http://www.microsoft.com/en-us/download/details.aspx?id=30679 Visual C++ Redistributable for Visual Studio 2012 Update 4] (Most titles use the x86 runtime whether your OS is 64bit or not)
+  # Depending on the library, either one or both of the following redistributable:
+    * [http://www.microsoft.com/en-us/download/details.aspx?id=26999 Visual C++ Redistributable for Visual Studio 2010 SP1]
+    * [http://www.microsoft.com/en-us/download/details.aspx?id=40784 Visual C++ Redistributable for Visual Studio 2013]
 
 Notes: 
-  * Windows 7 includes .net 3.5 and its updates to .net 2.0 and 3.0
+  * Most games executables are 32bit and require x86 x360ce and also x86 redistributable.
+  * Windows 7 includes .NET 3.5 (which include 3.0 and 2.0).
   * For Windows XP and Vista, users can obtain it from the above link, and Windows 8 users can enable it in [http://msdn.microsoft.com/en-us/library/hh506443.aspx Programs and Features - Turn Windows Features on and off.]
-  * .Net MUST be installed prior to the DirectX webupdate as it checks that .Net 2.0/3.0/3.5 is installed and skips the Managed DirectX framework if it is not.
-  * The full DirectX Redistributable will always install the file, however its best to have .net 3.5 installed anyhow as quite a few Xinput titles utilise .net for internal dependencies.
+  * .NET MUST be installed prior to the DirectX webupdate as it checks that .NET 2.0/3.0/3.5 is installed and skips the Managed DirectX framework if it is not.
+  * The full DirectX Redistributable will always install the file, however its best to have .NET 3.5 installed anyhow as quite a few Xinput titles utilize .NET for internal dependencies.
 
 = Introduction =
 
