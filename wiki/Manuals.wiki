@@ -1,4 +1,5 @@
 #summary Manual links
+#labels Restrict-AddWikiComment-Commit
 
 = Manual Links: =
 
