@@ -1,6 +1,6 @@
-#summary Manuals links
+#summary Manual links
 
-= Manuals Links: =
+= Manual Links: =
 
 [http://ngemu.com/threads/x360ce-libraries-tutorial-by-resolutespider5.155310/ x360ce Libraries Tutorial]
 
