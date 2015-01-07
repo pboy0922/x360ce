@@ -1,7 +1,7 @@
-#summary Manual links
+#summary Guide
 #labels Restrict-AddWikiComment-Commit,Featured
 
-= Manual Links: =
+= Guides: =
 
 [http://ngemu.com/threads/x360ce-libraries-tutorial-by-resolutespider5.155310/ x360ce Libraries Tutorial]
 
