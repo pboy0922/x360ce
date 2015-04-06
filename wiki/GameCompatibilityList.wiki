@@ -149,6 +149,7 @@ This is the new system utilised by r574+
   # Darksiders 2
   # Dark Souls: Prepare to Die Edition (may need dinput8.dll with DSFIX)
   # Dark Souls II
+  # Dark Souls II: SCHOLAR OF THE FIRST SIN (64bit only)
   # Dead Island
   # Deadlight
   # DeathSpank
